@@ -1,6 +1,6 @@
 baseurl = "http://www.example.com"
 title = "firas"
-
+publishDir = "docs"
 theme = "hugo-coder"
 
 languagecode = "en"
