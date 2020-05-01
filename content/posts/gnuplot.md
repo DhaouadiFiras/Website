@@ -13,7 +13,7 @@ I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX document
 3. **It blends well with the surroundings where it's inserted :** The figure should be in harmony with the text around it. For instance, it would be better if it shares the same fonts and should have as little extra white space as possible.
 
 Assuming you have an up-to-date version of gnuplot (and LaTeX) installed and working, let's get started. 
-### Process of creating a figure
+### Creating the figure
 What I do is actually generate a .tex file with gnuplot. Then I compile this file with Latex to obtain the output pdf. Although it seems a lengthy process, I suggest a bash script that does all the work in one-line command.
 Consider for example the following "minimal" gnuplot script: 
 
