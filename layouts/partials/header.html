@@ -1,0 +1,18 @@
+<nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="{{ .Site.BaseURL | absLangURL }}">
+      <i class="fa fa-home"></i> Home
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      {{ with .Site.Menus.main}}
+        {{ range sort . }}
+          <li class="navigation-item">
+          <a class="navigation-link" href="{{ .URL | relLangURL }}"><i class="{{.Pre}}"></i> {{ .Name }} </a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+</nav>

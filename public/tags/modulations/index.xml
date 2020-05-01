@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modulations on Firas&#39; Website</title>
+    <link>http://www.example.com/tags/modulations/</link>
+    <description>Recent content in Modulations on Firas&#39; Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/tags/modulations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A very short introduction to Witham&#39;s theory of modulations</title>
+      <link>http://www.example.com/posts/whithams-theory/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/whithams-theory/</guid>
+      <description>Many phenomena in nature and in our daily lives involve the investigation of waves. It is enough to recall that light travels as an electromagentic wave and that every sound is produced by a wave propagation. And yet, as beautiful and simple it may look to the eye, the investigation of wave dynamics can prove very tricky and may require a considerable amount of mathematical analysis. The main goal of this guide is to provide a decent set of tools and procedures intended to analyze the behavior of strongly nonlinear waves, based on the Witham’s theory of modulation.</description>
+    </item>
+    
+  </channel>
+</rss>

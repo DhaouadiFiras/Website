@@ -1,0 +1,12 @@
+<footer class="footer">
+  <section class="container">
+    {{ with .Site.Params.footercontent }}
+      <p>{{.}}</p>
+    {{ end }}
+    {{ if not .Site.Params.hideCopyright }}Copyright © {{ now.Format "2006" }}{{ end }}
+    {{ if not .Site.Params.hideCredits }}
+      {{ if not .Site.Params.hideCopyright }}  {{ end }}
+      Firas Dhaouadi. All rights reserved. This website is powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    {{ end }}
+  </section>
+</footer>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firas&#39; Website</title>
+    <link>http://www.example.com/</link>
+    <description>Recent content on Firas&#39; Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About my PhD work</title>
+      <link>http://www.example.com/posts/my-phd/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/my-phd/</guid>
+      <description>Subject: Mathematical analysis and numerical simulation of dispersive models by Extended Lagrangians. Advisors: Jean-Paul Vila (PhD advisor), Nicolas Favrie (PhD co-advisor) , Sergey Gavrilyuk (Advisor) Location: This is a joint project between IMT (Toulouse) and IUSTI (Marseille). Defense: It will be held at IMT by the end of 2020 ( to be determined ).  The main motivation The main motivation of my work is to derive a first order hyperbolic system that closely approximates dispersive equations of the Euler-Korteweg type.</description>
+    </item>
+    
+    <item>
+      <title>Theme Demo</title>
+      <link>http://www.example.com/posts/theme-demo/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/theme-demo/</guid>
+      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
+   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+    </item>
+    
+    <item>
+      <title>A very short introduction to Witham&#39;s theory of modulations</title>
+      <link>http://www.example.com/posts/whithams-theory/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/whithams-theory/</guid>
+      <description>Many phenomena in nature and in our daily lives involve the investigation of waves. It is enough to recall that light travels as an electromagentic wave and that every sound is produced by a wave propagation. And yet, as beautiful and simple it may look to the eye, the investigation of wave dynamics can prove very tricky and may require a considerable amount of mathematical analysis. The main goal of this guide is to provide a decent set of tools and procedures intended to analyze the behavior of strongly nonlinear waves, based on the Witham’s theory of modulation.</description>
+    </item>
+    
+    <item>
+      <title>A brief introduction to Hamilton&#39;s principle of stationary action</title>
+      <link>http://www.example.com/posts/hamilton/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/hamilton/</guid>
+      <description>Variational principles When we effortlessly let go of an object, say a tennis ball for example, we instinctively know it will fall straightforwardly to the ground. such a predicition is based on our experience and daily observations. If the ball simply went up instead of falling, this would not feel right, because it was never observed before. This simple exeperience shows that nature is picky: for given circumstances, it does not behave randomly but rather seems to carefully choose one realizable outcome out of all possibilities (at least in classical mechanics).</description>
+    </item>
+    
+    <item>
+      <title>About Elliptic functions</title>
+      <link>http://www.example.com/posts/elliptic-functions/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/elliptic-functions/</guid>
+      <description>Table of Contents This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+ Move static content to static Create your Hugo configuration file Set your configuration publish folder to site Convert Jekyll templates to Hugo templates Convert Jekyll plugins to Hugo shortcodes  Implementation Usage  Finishing Touches  Fix Content Clean Up  A practical example in a diff  Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output.</description>
+    </item>
+    
+    <item>
+      <title>Career</title>
+      <link>http://www.example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/about/</guid>
+      <description>Education   2017-Present -  Université Paul Sabatier-Institut de Mathématiques de Toulouse:
+PhD in applied maths : Mathematical analysis and numerical simulation of dispersive models by augmented Lagrangians.  2016-2017 -  Aix-Marseille Université:
+Master&amp;rsquo;s degree in Multiphase Flows, Energetics and Combustion.  2013-2016 -  Ecole Nationale d&amp;rsquo;Ingénieurs de Tunis:
+National Diploma of Engineering in Modelling for Industry and Services. (MIndS)  2011-2013 -  Institut Préparatoire aux Etudes d&amp;rsquo;Ingénieurs d&amp;rsquo;El Manar:</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://www.example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/contact/</guid>
+      <description>If you want to inquire about more details, if you have questions, or if you just happen to share any common interests, please feel free to contact me :
+ &amp;nbsp; &amp;nbsp; (+33) 05 61 55 93 07
+ &amp;nbsp; &amp;nbsp;  &amp;nbsp; or &amp;nbsp; 
+ &amp;nbsp; &amp;nbsp; INSA de Toulouse - Département de Génie Mathématique - Office 131
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 145, avenue de Rangueil</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>http://www.example.com/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/publications/</guid>
+      <description> Journal articles  October 2018 : Dhaouadi F, Favrie N, Gavrilyuk S. Extended Lagrangian approach for the defocusing nonlinear Schrödinger equation. Stud Appl Math. 2018;1–23.
+ preprint &amp;nbsp; &amp;nbsp;  journal  Talks  SHARK-FV 2018 : Extended Lagrangian approach for the defocusing non-linear Schrödinger equation. SHARK-FV 2019 : A hyperbolic augmented model for thin flows.  </description>
+    </item>
+    
+  </channel>
+</rss>

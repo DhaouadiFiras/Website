@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Firas&#39; Website</title>
+    <link>http://www.example.com/tags/</link>
+    <description>Recent content in Tags on Firas&#39; Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elliptic Functions</title>
+      <link>http://www.example.com/tags/elliptic-functions/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/tags/elliptic-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modulations</title>
+      <link>http://www.example.com/tags/modulations/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/tags/modulations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schrödinger</title>
+      <link>http://www.example.com/tags/schr%C3%B6dinger/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/tags/schr%C3%B6dinger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whitham</title>
+      <link>http://www.example.com/tags/whitham/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/tags/whitham/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
