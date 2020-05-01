@@ -13,7 +13,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 linenos=true
 
-disqusShortname = "Firas"
+disqusShortname = ""
 
 [params]
     author = "Firas Dhaouadi"
