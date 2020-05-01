@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Firas&#39; Website</title>
-    <link>http://www.example.com/posts/</link>
+    <link>https://dhaouadifiras.github.io/website/posts/</link>
     <description>Recent content in Posts on Firas&#39; Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dhaouadifiras.github.io/website/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Producing LaTeX figures with Gnuplot</title>
-      <link>http://www.example.com/posts/gnuplot/</link>
+      <link>https://dhaouadifiras.github.io/website/posts/gnuplot/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/gnuplot/</guid>
+      <guid>https://dhaouadifiras.github.io/website/posts/gnuplot/</guid>
       <description>Gnuplot is a very handy tool when it comes to producing figures to be included into your work, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and presentation of your paper. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.</description>
     </item>
     
     <item>
       <title>A very basic introduction to Hamilton&#39;s principle</title>
-      <link>http://www.example.com/posts/hamilton/</link>
+      <link>https://dhaouadifiras.github.io/website/posts/hamilton/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/hamilton/</guid>
+      <guid>https://dhaouadifiras.github.io/website/posts/hamilton/</guid>
       <description>When we effortlessly let go of an object, say a tennis ball for example, we instinctively know it will fall straightforwardly to the ground. such a predicition is based on our experience and daily observations. If the ball simply went up instead of falling, this would not feel right, because it was never observed before. This simple exeperience shows that nature is picky: for given circumstances, it does not behave randomly but rather seems to carefully choose one realizable outcome out of all possibilities (at least in classical mechanics).</description>
     </item>
     
     <item>
       <title>My PhD Work</title>
-      <link>http://www.example.com/posts/my-phd/</link>
+      <link>https://dhaouadifiras.github.io/website/posts/my-phd/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/my-phd/</guid>
+      <guid>https://dhaouadifiras.github.io/website/posts/my-phd/</guid>
       <description>Subject: Mathematical analysis and numerical simulation of dispersive models by Extended Lagrangians. Advisors: Jean-Paul Vila (PhD advisor), Nicolas Favrie (PhD co-advisor) , Sergey Gavrilyuk (Advisor) Location: This is a joint project between IMT (Toulouse) and IUSTI (Marseille). Defense: It will be held at IMT by the end of 2020 ( to be determined ).  The main motivation The main motivation of my work is to derive a first order hyperbolic system that closely approximates dispersive equations of the Euler-Korteweg type.</description>
     </item>
     
