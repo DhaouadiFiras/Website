@@ -36,7 +36,7 @@ This will finally generate a 'figure.pdf' alongside the usual latex outputs (whi
 <img style="display:block; margin-left: auto; margin-right: auto;"src="/images/gnu1.svg">
 Test it yourself:  
 
-1. Download the test <a href="/files/plotscript" target="_blank">script</a> and the bash <a href="/files/plotfigure" target="_blank">script</a>.
+1. Download the <a href="/files/plotscript" target="_blank"> <i class="far fa-file"></i> test script </a> and the <a href="/files/plotfigure" target="_blank"> <i class="far fa-file"></i> bash script</a>.
 2. Put them in some directory `'/path/to/dir'` .
 3. Open a terminal and : 
 ``` bash
