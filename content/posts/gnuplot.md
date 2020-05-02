@@ -14,7 +14,7 @@ I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX document
 
 Assuming you have an up-to-date version of gnuplot (and LaTeX) installed and working, let's get started. 
 ### Creating the figure
-What I do is actually generate a .tex file with gnuplot. Then I compile this file with Latex to obtain the output pdf. Although it seems a lengthy process, I suggest a bash script that does all the work in one-line command.
+What I do is actually generate a .tex file with gnuplot. Then, I compile this file with Latex to obtain the output pdf. For a multistep process I generally recommend using a bash script that does all the work in one-line command.
 Consider for example the following "minimal" gnuplot script: 
 
 ``` gnuplot
@@ -23,10 +23,10 @@ set output 'figure.tex'
 set grid 
 plot sin(x) ,cos(x) 
 ```
-If this script is saved located in a directory `/path/to/dir` then running the following in a terminal :
+If this script is saved as 'plotscript' in a directory `/path/to/dir` then running the following in a terminal :
 ```bash
 cd /path/to/dir
-gnuplot script
+gnuplot plotscript
 ```
 generates a 'figure.tex' file. Since we use the `standalone` option, this tex file has the necessary headings and is compilable on its own, for example by using :
 ```bash
@@ -34,18 +34,14 @@ pdflatex figure.tex
 ```
 This will finally generate a 'figure.pdf' alongside the usual latex outputs (which you can remove if you want). The figure should look like this : 
 <img style="display:block; margin-left: auto; margin-right: auto;"src="/images/gnu1.svg">
+Test it yourself:  
 
-To make the process less cumbersome and generate minimal outputs, I suggest you create a bash script containing for example : 
-
+1. Download the test script and the bash script.
+2. Put them in some directory '/path/to/dir'.
+3. Open a terminal and : 
 ``` bash
-#!/bin/bash
-gnuplot script
-pdflatex --interaction=batchmode figure.tex
-rm *.aux *.log *-inc.eps *.tex *converted-to.pdf
-```
-and put it in the same directory as your gnuplot script. Then, all you have to do from a terminal is : 
-```bash
-bash bashscript
+cd path/to/dir
+bash plotfigure
 ```
 
 ### Enhancing quality

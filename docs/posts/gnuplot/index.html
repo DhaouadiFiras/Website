@@ -97,7 +97,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              4 minutes read
+              3 minutes read
             </span>
           </div>
           
@@ -122,27 +122,31 @@ I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX document
 
 <h3 id="creating-the-figure">Creating the figure</h3>
 
-<p>What I do is actually generate a .tex file with gnuplot. Then I compile this file with Latex to obtain the output pdf. Although it seems a lengthy process, I suggest a bash script that does all the work in one-line command.
+<p>What I do is actually generate a .tex file with gnuplot. Then, I compile this file with Latex to obtain the output pdf. For a multistep process I generally recommend using a bash script that does all the work in one-line command.
 Consider for example the following &ldquo;minimal&rdquo; gnuplot script:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">terminal</span> epslatex standalone size <span style="color:#40a070">15</span>cm<span style="color:#666">,</span><span style="color:#40a070">7</span>cm color colortext <span style="color:#40a070">12</span>
 <span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">output</span> <span style="color:#4070a0">&#39;figure.tex&#39;</span>
 <span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">grid</span> 
 <span style="color:#007020;font-weight:bold">plot</span> <span style="color:#06287e">sin</span>(x) <span style="color:#666">,</span><span style="color:#06287e">cos</span>(x) </code></pre></div>
-<p>If this script is saved located in a directory <code>/path/to/dir</code> then running the following in a terminal :</p>
+<p>If this script is saved as &lsquo;plotscript&rsquo; in a directory <code>/path/to/dir</code> then running the following in a terminal :</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007020">cd</span> /path/to/dir
-gnuplot script</code></pre></div>
+gnuplot plotscript</code></pre></div>
 <p>generates a &lsquo;figure.tex&rsquo; file. Since we use the <code>standalone</code> option, this tex file has the necessary headings and is compilable on its own, for example by using :</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pdflatex figure.tex</code></pre></div>
 <p>This will finally generate a &lsquo;figure.pdf&rsquo; alongside the usual latex outputs (which you can remove if you want). The figure should look like this :
-<img style="display:block; margin-left: auto; margin-right: auto;"src="https://dhaouadifiras.github.io/website/images/gnu1.svg"></p>
+<img style="display:block; margin-left: auto; margin-right: auto;"src="https://dhaouadifiras.github.io/website/images/gnu1.svg">
+Test it yourself:</p>
 
-<p>To make the process less cumbersome and generate minimal outputs, I suggest you create a bash script containing for example :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007020">#!/bin/bash
-</span><span style="color:#007020"></span>gnuplot script
-pdflatex --interaction<span style="color:#666">=</span>batchmode figure.tex
-rm *.aux *.log *-inc.eps *.tex *converted-to.pdf</code></pre></div>
-<p>and put it in the same directory as your gnuplot script. Then, all you have to do from a terminal is :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash bashscript</code></pre></div>
+<ol>
+<li>Download the test script and the bash script.</li>
+<li>Put them in some directory &lsquo;/path/to/dir&rsquo;.</li>
+<li>Open a terminal and :
+<code>bash
+cd path/to/dir
+bash plotfigure
+</code></li>
+</ol>
+
 <h3 id="enhancing-quality">Enhancing quality</h3>
 
 <p>We can try to make the previous graph look a little bit better. We can for instance :</p>
