@@ -39,6 +39,7 @@ Test it yourself:
 1. Download the <a href="/files/plotscript" target="_blank"> <i class="far fa-file"></i> test script </a> and the <a href="/files/plotfigure" target="_blank"> <i class="far fa-file"></i> bash script</a>.
 2. Put them in some directory `'/path/to/dir'` .
 3. Open a terminal and : 
+
 ``` bash
 cd path/to/dir
 bash plotfigure
