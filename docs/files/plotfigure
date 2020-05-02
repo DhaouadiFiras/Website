@@ -1,0 +1,9 @@
+#!/bin/bash
+# This files generates a gnuplot figure in tex format then generates a postscript
+
+
+gnuplot figurecode
+filename=figure
+pdflatex --interaction=batchmode $filename.tex
+
+rm *.aux *.log *-inc.eps *.tex *converted-to.pdf
