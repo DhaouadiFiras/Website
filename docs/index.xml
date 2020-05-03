@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Producing LaTeX figures with Gnuplot</title>
+      <title>Producing figures for LaTeX documents with Gnuplot</title>
       <link>https://dhaouadifiras.github.io/website/posts/gnuplot/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dhaouadifiras.github.io/website/posts/gnuplot/</guid>
-      <description>Gnuplot is a very handy tool when it comes to producing figures to be included into your work, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and presentation of your paper. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.</description>
+      <description>Gnuplot is a very handy tool when it comes to producing figures to be included into your work documens, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and the presentation of your document. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.</description>
     </item>
     
     <item>

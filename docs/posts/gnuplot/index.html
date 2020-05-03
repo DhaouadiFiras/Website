@@ -10,13 +10,13 @@
     <meta name="keywords" content="Firas,Dhaouadi,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Producing LaTeX figures with Gnuplot"/>
-<meta name="twitter:description" content="Gnuplot is a very handy tool when it comes to producing figures to be included into your work, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and presentation of your paper. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently."/>
+<meta name="twitter:title" content="Producing figures for LaTeX documents with Gnuplot"/>
+<meta name="twitter:description" content="Gnuplot is a very handy tool when it comes to producing figures to be included into your work documens, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and the presentation of your document. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently."/>
 
 
     <base href="https://dhaouadifiras.github.io/website/posts/gnuplot/">
     <title>
-  Producing LaTeX figures with Gnuplot · Firas&#39; Website
+  Producing figures for LaTeX documents with Gnuplot · Firas&#39; Website
 </title>
 
     <link rel="canonical" href="https://dhaouadifiras.github.io/website/posts/gnuplot/">
@@ -85,7 +85,7 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Producing LaTeX figures with Gnuplot</h1>
+          <h1 class="title">Producing figures for LaTeX documents with Gnuplot</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -97,7 +97,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              3 minutes read
+              4 minutes read
             </span>
           </div>
           
@@ -109,7 +109,7 @@
         
 
 <p><p style="text-align: justify">
-Gnuplot is a very handy tool when it comes to producing figures to be included into your work, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and presentation of your paper. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.<br />
+Gnuplot is a very handy tool when it comes to producing figures to be included into your work documens, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and the presentation of your document. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.<br />
 I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX documents. For me, any figure should satisfy the following requirements :</p>
 
 <ol>
@@ -118,9 +118,17 @@ I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX document
 <li><strong>It blends well with the surroundings where it&rsquo;s inserted :</strong> The figure should be in harmony with the text around it. For instance, it would be better if it shares the same fonts and should have as little extra white space as possible.</li>
 </ol>
 
-<p>Assuming you have an up-to-date version of gnuplot (and LaTeX) installed and working, let&rsquo;s get started.</p>
+<p>In this step-by-step demonstration, I explain how to generate some nice-looking figures by using gnuplot and LaTeX.</p>
 
-<h3 id="creating-the-figure">Creating the figure</h3>
+<h3 id="1-prerequisites">1. Prerequisites</h3>
+
+<ul>
+<li>Preferably a machine running with unix-based OS.</li>
+<li>Gnuplot version 5.2 or higher</li>
+<li>A basic LaTeX compiler. Some LaTeX packages are required but are normally included by default (calc, color, graphicx).</li>
+</ul>
+
+<h3 id="2-creating-the-figure">2. Creating the figure</h3>
 
 <p>What I do is actually generate a .tex file with gnuplot. Then, I compile this file with Latex to obtain the output pdf. For a multistep process I generally recommend using a bash script that does all the work in one-line command.
 Consider for example the following &ldquo;minimal&rdquo; gnuplot script:</p>

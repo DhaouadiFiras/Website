@@ -1,19 +1,26 @@
 +++
 date = "2020-04-30"
-title = "Producing LaTeX figures with Gnuplot"
+title = "Producing figures for LaTeX documents with Gnuplot"
 slug = "gnuplot"
 
 +++
 <p style="text-align: justify"> 
-Gnuplot is a very handy tool when it comes to producing figures to be included into your work, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and presentation of your paper. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.  
+Gnuplot is a very handy tool when it comes to producing figures to be included into your work documens, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and the presentation of your document. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.  
 I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX documents. For me, any figure should satisfy the following requirements :  
 
 1. **It's formatted as vector graphics :** Vector graphics are more reliable when it comes to quality. Unless you use some trillions of pixels, a bitmap image turns very quickly into a mess when you zoom for details.
 2. **Its Labels and axis graduations are effortlessly visible :** This is important especially in slides for oral presentations. Graduations and labels must be clearly visible, otherwise the figure may lose its purpose. 
 3. **It blends well with the surroundings where it's inserted :** The figure should be in harmony with the text around it. For instance, it would be better if it shares the same fonts and should have as little extra white space as possible.
 
-Assuming you have an up-to-date version of gnuplot (and LaTeX) installed and working, let's get started. 
-### Creating the figure
+In this step-by-step demonstration, I explain how to generate some nice-looking figures by using gnuplot and LaTeX. 
+### 1. Prerequisites
+
++ Preferably a machine running with unix-based OS.
++ Gnuplot version 5.2 or higher
++ A basic LaTeX compiler. Some LaTeX packages are required but are normally included by default (calc, color, graphicx).
+
+
+### 2. Creating the figure
 What I do is actually generate a .tex file with gnuplot. Then, I compile this file with Latex to obtain the output pdf. For a multistep process I generally recommend using a bash script that does all the work in one-line command.
 Consider for example the following "minimal" gnuplot script: 
 
@@ -40,7 +47,7 @@ Test it yourself:
 2. Put them in some directory `'/path/to/dir'` .
 3. Open a terminal and : 
 
-``` bash
+```bash
 cd path/to/dir
 bash plotfigure
 ```

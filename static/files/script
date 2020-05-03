@@ -1,0 +1,28 @@
+reset
+set terminal epslatex standalone size 15cm,7cm color colortext 12
+set output 'figure.tex'
+
+set grid 
+set yrange[-1.2:1.5]
+
+set style line 1 lc rgb '#dd181f' lt 1 lw 2 dt 2 
+set style line 2 lc rgb '#0060ad' lt 1 lw 2  
+set style arrow 1 head filled size screen 0.022,20,30 lw 2 lc rgb "black"
+
+#x-Axis
+set arrow from graph 0,0 to graph 1,0 arrowstyle 1 front
+set label 1 "$x$" at graph 1.02,0.01
+#y-Axis
+set arrow from graph 0,0 to graph 0,1 arrowstyle 1
+set label 2 "$y$" at graph -0.01,1.05
+
+pi=3.141569265359
+set xrange[0:5*pi]
+set xtics ("$0$" 0,'$\pi$' pi,'$2\pi$' 2*pi,'$3\pi$' 3*pi,'$4\pi$' 4*pi,'$5\pi$' 5*pi) 
+set yrange[-1.2:1.5]
+set ytics (-1,-0.5,0,0.5,1)
+set tic scale 0.5
+
+set samples 2000
+set key box at graph 0.99,0.99
+plot sin(x) ls 1 ,cos(x) ls 2
