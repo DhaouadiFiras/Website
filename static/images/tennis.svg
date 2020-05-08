@@ -21,6 +21,18 @@
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs3970"><marker
+     inkscape:stockid="Arrow1Mstart"
+     orient="auto"
+     refY="0.0"
+     refX="0.0"
+     id="marker1503"
+     style="overflow:visible"
+     inkscape:isstock="true"><path
+       id="path1501"
+       d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+       style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+       transform="scale(0.4) translate(10,0)" /></marker><marker
+     inkscape:collect="always"
      inkscape:isstock="true"
      style="overflow:visible"
      id="marker1383"
@@ -499,10 +511,6 @@
      sodipodi:role="line">w</tspan></text>
 <path
    inkscape:connector-curvature="0"
-   id="path90-8"
-   d="m 98.079624,188.94856 c 0,-40.19202 0,-40.19202 0,-40.19202 z"
-   style="fill:#ff0000;stroke:#ff0000;stroke-width:0.65445513;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.92673115, 1.30891038;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker5003-1)" /><path
-   inkscape:connector-curvature="0"
    id="path102"
    d="M 141.18994,142.61204 Z"
    style="fill:none;stroke:#000000;stroke-width:0.29969263px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><path
@@ -527,5 +535,8 @@
      sodipodi:role="line">0</tspan></text>
 <path
    id="path1064"
-   d="m 159.35497,7.3314583 c 0,228.8774617 0,228.8774617 0,228.8774617"
-   style="fill:none;stroke:#000000;stroke-width:1.927;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1383)" /></svg>
+   d="m 139.35497,7.3314583 c 0,228.8774617 0,228.8774617 0,228.8774617"
+   style="fill:none;stroke:#000000;stroke-width:1.927;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1383)" /><path
+   id="path1499"
+   d="M 99.15416,192.9563 V 147.37212"
+   style="fill:#ff0000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1503)" /></svg>
