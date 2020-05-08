@@ -8,10 +8,9 @@ languagecode = "en"
 paginate = 20
 canonifyurls = true
 
-pygmentsstyle = "friendly"
+pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-linenos=true
 
 disqusShortname = ""
 
@@ -20,7 +19,7 @@ disqusShortname = ""
     description = "Firas Dhaouadi's personal website"
     keywords = "Firas,Dhaouadi,personal"
     info = ""
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/avatar.png"
     footercontent = ""
 
     dateformat = "January 2, 2006"

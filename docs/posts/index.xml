@@ -38,5 +38,21 @@
       <description>Subject: Mathematical analysis and numerical simulation of dispersive models by Extended Lagrangians. Advisors: Jean-Paul Vila (PhD advisor), Nicolas Favrie (PhD co-advisor) , Sergey Gavrilyuk (Advisor) Location: This is a joint project between IMT (Toulouse) and IUSTI (Marseille). Defense: It will be held at IMT by the end of 2020 ( to be determined ).  The main motivation The main motivation of my work is to derive a first order hyperbolic system that closely approximates dispersive equations of the Euler-Korteweg type.</description>
     </item>
     
+    <item>
+      <title>Theme Demo</title>
+      <link>https://dhaouadifiras.github.io/website/posts/theme-demo/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhaouadifiras.github.io/website/posts/theme-demo/</guid>
+      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
+   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+    </item>
+    
   </channel>
 </rss>

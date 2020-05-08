@@ -106,9 +106,9 @@ pre {
   font-family: $code-font-family;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.6rem;
+  line-height: 1.8rem;
   margin: 2.0rem 0 2.0rem 0;
-  padding: 2.0rem;
+  padding: 1.50rem;
   overflow-x: auto;
   code {
     display: inline-block;
@@ -123,7 +123,7 @@ code {
   font-weight: 400;
   background-color: $alt-bg-color;
   color: $fg-color;
-  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
 }
 
 blockquote {

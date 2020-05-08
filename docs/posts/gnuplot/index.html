@@ -28,7 +28,7 @@
     
       
       
-      <link rel="stylesheet" href="https://dhaouadifiras.github.io/website/css/coder.min.9d52be063a9e9d5fdd0805c49d7d02f2a92b14eaf73aa752f09c6a1ff73dc02b.css" integrity="sha256-nVK&#43;BjqenV/dCAXEnX0C8qkrFOr3OqdS8JxqH/c9wCs=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://dhaouadifiras.github.io/website/css/coder.min.686a7427de4a186cd41e830a10128ab0124c0f7ff74a4f44e07c729a8cf194b1.css" integrity="sha256-aGp0J95KGGzUHoMKEBKKsBJMD3/3Sk9E4HxymozxlLE=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -124,34 +124,56 @@ I use Gnuplot mainly for one dimensional graphs to be inserted in LaTeX document
 
 <ul>
 <li>Preferably a machine running with unix-based OS.</li>
-<li>Gnuplot version 5.2 or higher</li>
-<li>A basic LaTeX compiler. Some LaTeX packages are required but are normally included by default (calc, color, graphicx).</li>
+<li>A text editor.</li>
+<li><code>gnuplot</code> (5.0 or higher).</li>
+<li>A LaTex installation. You can for instance install the <code>texlive-full</code> package which comes with everything, or just install <code>texlive-latex-recommended</code> plus :
+
+<ul>
+<li><code>texlive-fonts-recommended</code></li>
+<li><code>cm-super</code></li>
+</ul></li>
 </ul>
 
 <h3 id="2-creating-the-figure">2. Creating the figure</h3>
 
-<p>What I do is actually generate a .tex file with gnuplot. Then, I compile this file with Latex to obtain the output pdf. For a multistep process I generally recommend using a bash script that does all the work in one-line command.
-Consider for example the following &ldquo;minimal&rdquo; gnuplot script:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">terminal</span> epslatex standalone size <span style="color:#40a070">15</span>cm<span style="color:#666">,</span><span style="color:#40a070">7</span>cm color colortext <span style="color:#40a070">12</span>
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">output</span> <span style="color:#4070a0">&#39;figure.tex&#39;</span>
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">grid</span> 
-<span style="color:#007020;font-weight:bold">plot</span> <span style="color:#06287e">sin</span>(x) <span style="color:#666">,</span><span style="color:#06287e">cos</span>(x) </code></pre></div>
-<p>If this script is saved as &lsquo;plotscript&rsquo; in a directory <code>/path/to/dir</code> then running the following in a terminal :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007020">cd</span> /path/to/dir
-gnuplot plotscript</code></pre></div>
-<p>generates a &lsquo;figure.tex&rsquo; file. Since we use the <code>standalone</code> option, this tex file has the necessary headings and is compilable on its own, for example by using :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pdflatex figure.tex</code></pre></div>
-<p>This will finally generate a &lsquo;figure.pdf&rsquo; alongside the usual latex outputs (which you can remove if you want). The figure should look like this :
-<img style="display:block; margin-left: auto; margin-right: auto;"src="https://dhaouadifiras.github.io/website/images/gnu1.svg">
-Test it yourself:</p>
+<p>Since I will be using <code>epslatex</code> terminal, running the gnuplot script will generate two files :</p>
 
+<ul>
+<li>a .tex containing all the writing (titles, labels, key).</li>
+<li>a postscript file containing the graphics (curves, axes, grid).</li>
+</ul>
+
+<p>Then, compiling the .tex file will generate a pdf file containing the full figure. So to summarize, the process goes like this :</p>
+
+<p><center>
+    <i class="far fa-file-code"></i> script   &nbsp;&nbsp; $\underset{gnuplot}{\Longrightarrow}$ &nbsp;&nbsp; <i class="far fa-file-code"></i> figure.tex &nbsp;+&nbsp; <i class="far fa-file-image"></i> figure-inc.eps &nbsp;&nbsp; $\underset{pdflatex}{\Longrightarrow}$ &nbsp;&nbsp; <i class="far fa-file-pdf"></i> figure.pdf
+</center></p>
+
+<p>To do that, we will use the <code>epslatex</code> terminal.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#66d9ef">set</span> terminal epslatex standalone
+<span style="color:#66d9ef">set</span> output <span style="color:#e6db74">&#39;figure.tex&#39;</span></code></pre></div>
+<p>The <code>standalone</code> option makes the generated TeX file compilable on its own. A full minimal example is given below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#66d9ef">set</span> terminal epslatex standalone size <span style="color:#ae81ff">15</span>cm<span style="color:#f92672">,</span><span style="color:#ae81ff">7</span>cm color colortext <span style="color:#ae81ff">12</span>
+<span style="color:#66d9ef">set</span> output <span style="color:#e6db74">&#39;figure.tex&#39;</span>
+<span style="color:#66d9ef">set</span> grid 
+<span style="color:#66d9ef">plot</span> <span style="color:#a6e22e">sin</span>(x)<span style="color:#f92672">,</span> <span style="color:#a6e22e">cos</span>(x) </code></pre></div>
 <ol>
-<li>Download the <a href="https://dhaouadifiras.github.io/website/files/plotscript" target="_blank"> <i class="far fa-file"></i> test script </a> and the <a href="https://dhaouadifiras.github.io/website/files/plotfigure" target="_blank"> <i class="far fa-file"></i> bash script</a>.</li>
-<li>Put them in some directory <code>'/path/to/dir'</code> .</li>
-<li>Open a terminal and :</li>
+<li>Copy this code to a new document and save it as <code>script</code> in some directory <code>/path/to/dir</code></li>
+<li>In a terminal, move to this directory by running the command <code>cd /path/to/dir</code>.</li>
+<li>Compile this code with gnuplot by running <code>gnuplot script</code> in the terminal.</li>
+<li>Compile the output TeX file by running <code>pdflatex figure.tex</code></li>
 </ol>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007020">cd</span> path/to/dir
-bash plotfigure</code></pre></div>
+
+<p>This will finally generate a &lsquo;figure.pdf&rsquo; alongside the usual latex outputs (which you can remove if you want). The figure should look like this :
+<img style="display:block; margin-left: auto; margin-right: auto;"src="https://dhaouadifiras.github.io/website/images/gnu1.svg"></p>
+
+<p><strong>Tip :</strong> Since the process goes through several steps, I recommend using a bash script containing all the system commands and place it in the same directory. Here&rsquo;s an example :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>gnuplot script
+pdflatex --interaction<span style="color:#f92672">=</span>batchmode figure.tex
+rm *.aux *.log *-inc.eps *.tex *converted-to.pdf</code></pre></div>
+<p>The option <code>--interaction=batchmode</code> hides almost all the output of the pdflatex command. The last line removes all the unnecessary latex output files to just keep the script, the bashcript and pdf output.</p>
+
 <h3 id="enhancing-quality">Enhancing quality</h3>
 
 <p>We can try to make the previous graph look a little bit better. We can for instance :</p>
@@ -164,27 +186,27 @@ bash plotfigure</code></pre></div>
 </ol>
 
 <p>But first, let us define some line styles. It helps to have some predefined styles you set at your own convenience for future uses :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">style</span> line <span style="color:#40a070">1</span> lc rgb <span style="color:#4070a0">&#39;#dd181f&#39;</span> lt <span style="color:#40a070">1</span> lw <span style="color:#40a070">2</span> dt <span style="color:#40a070">2</span> 
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">style</span> line <span style="color:#40a070">2</span> lc rgb <span style="color:#4070a0">&#39;#0060ad&#39;</span> lt <span style="color:#40a070">1</span> lw <span style="color:#40a070">2</span>  
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">style</span> arrow <span style="color:#40a070">1</span> head filled size screen <span style="color:#40a070">0.022</span><span style="color:#666">,</span><span style="color:#40a070">20</span><span style="color:#666">,</span><span style="color:#40a070">30</span> lw <span style="color:#40a070">2</span> lc rgb <span style="color:#4070a0">&#34;black&#34;</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#66d9ef">set</span> style line <span style="color:#ae81ff">1</span> lc rgb <span style="color:#e6db74">&#39;#dd181f&#39;</span> lt <span style="color:#ae81ff">1</span> lw <span style="color:#ae81ff">2</span> dt <span style="color:#ae81ff">2</span> 
+<span style="color:#66d9ef">set</span> style line <span style="color:#ae81ff">2</span> lc rgb <span style="color:#e6db74">&#39;#0060ad&#39;</span> lt <span style="color:#ae81ff">1</span> lw <span style="color:#ae81ff">2</span>  
+<span style="color:#66d9ef">set</span> style arrow <span style="color:#ae81ff">1</span> head filled size screen <span style="color:#ae81ff">0.022</span><span style="color:#f92672">,</span><span style="color:#ae81ff">20</span><span style="color:#f92672">,</span><span style="color:#ae81ff">30</span> lw <span style="color:#ae81ff">2</span> lc rgb <span style="color:#e6db74">&#34;black&#34;</span></code></pre></div>
 <p>Then let us add the axes :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#60a0b0;font-style:italic">#x-Axis</span><span style="">
-</span><span style=""></span><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">arrow</span> from graph <span style="color:#40a070">0</span><span style="color:#666">,</span><span style="color:#40a070">0</span> to graph <span style="color:#40a070">1</span><span style="color:#666">,</span><span style="color:#40a070">0</span> arrowstyle <span style="color:#40a070">1</span> front
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">label</span> <span style="color:#40a070">1</span> <span style="color:#4070a0">&#34;$x$&#34;</span> at graph <span style="color:#40a070">1.02</span><span style="color:#666">,</span><span style="color:#40a070">0.01</span>
-<span style="color:#60a0b0;font-style:italic">#y-Axis</span><span style="">
-</span><span style=""></span><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">arrow</span> from graph <span style="color:#40a070">0</span><span style="color:#666">,</span><span style="color:#40a070">0</span> to graph <span style="color:#40a070">0</span><span style="color:#666">,</span><span style="color:#40a070">1</span> arrowstyle <span style="color:#40a070">1</span>
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">label</span> <span style="color:#40a070">2</span> <span style="color:#4070a0">&#34;$y$&#34;</span> at graph <span style="color:#40a070">-0</span><span style="color:#40a070">.01</span><span style="color:#666">,</span><span style="color:#40a070">1.05</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#75715e">#x-Axis</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">set</span> arrow from graph <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0</span> to graph <span style="color:#ae81ff">1</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0</span> arrowstyle <span style="color:#ae81ff">1</span> front
+<span style="color:#66d9ef">set</span> label <span style="color:#ae81ff">1</span> <span style="color:#e6db74">&#34;$x$&#34;</span> at graph <span style="color:#ae81ff">1.02</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0.01</span>
+<span style="color:#75715e">#y-Axis</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">set</span> arrow from graph <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0</span> to graph <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span><span style="color:#ae81ff">1</span> arrowstyle <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">set</span> label <span style="color:#ae81ff">2</span> <span style="color:#e6db74">&#34;$y$&#34;</span> at graph <span style="color:#ae81ff">-0</span><span style="color:#ae81ff">.01</span><span style="color:#f92672">,</span><span style="color:#ae81ff">1.05</span></code></pre></div>
 <p>We define the plot range and add custom graduations :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#bb60d5">pi</span><span style="color:#666">=</span><span style="color:#40a070">3.141569265359</span>
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">xrange</span>[<span style="color:#40a070">0</span><span style="color:#666">:</span><span style="color:#40a070">5</span><span style="color:#666">*</span>pi]
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">xtics</span> (<span style="color:#4070a0">&#34;$0$&#34;</span> <span style="color:#40a070">0</span><span style="color:#666">,</span><span style="color:#4070a0">&#39;$\pi$&#39;</span> pi<span style="color:#666">,</span><span style="color:#4070a0">&#39;$2\pi$&#39;</span> <span style="color:#40a070">2</span><span style="color:#666">*</span>pi<span style="color:#666">,</span><span style="color:#4070a0">&#39;$3\pi$&#39;</span> <span style="color:#40a070">3</span><span style="color:#666">*</span>pi<span style="color:#666">,</span><span style="color:#4070a0">&#39;$4\pi$&#39;</span> <span style="color:#40a070">4</span><span style="color:#666">*</span>pi<span style="color:#666">,</span><span style="color:#4070a0">&#39;$5\pi$&#39;</span> <span style="color:#40a070">5</span><span style="color:#666">*</span>pi) 
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">yrange</span>[<span style="color:#40a070">-1</span><span style="color:#40a070">.2</span><span style="color:#666">:</span><span style="color:#40a070">1.5</span>]
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">ytics</span> (<span style="color:#40a070">-1</span><span style="color:#666">,</span><span style="color:#40a070">-0</span><span style="color:#40a070">.5</span><span style="color:#666">,</span><span style="color:#40a070">0</span><span style="color:#666">,</span><span style="color:#40a070">0.5</span><span style="color:#666">,</span><span style="color:#40a070">1</span>)
-<span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">tic</span> scale <span style="color:#40a070">0.5</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot">pi<span style="color:#f92672">=</span><span style="color:#ae81ff">3.141569265359</span>
+<span style="color:#66d9ef">set</span> xrange[<span style="color:#ae81ff">0</span><span style="color:#f92672">:</span><span style="color:#ae81ff">5</span><span style="color:#f92672">*</span>pi]
+<span style="color:#66d9ef">set</span> xtics (<span style="color:#e6db74">&#34;$0$&#34;</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#39;$\pi$&#39;</span> pi<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;$2\pi$&#39;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>pi<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;$3\pi$&#39;</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>pi<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;$4\pi$&#39;</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span>pi<span style="color:#f92672">,</span><span style="color:#e6db74">&#39;$5\pi$&#39;</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">*</span>pi) 
+<span style="color:#66d9ef">set</span> yrange[<span style="color:#ae81ff">-1</span><span style="color:#ae81ff">.2</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1.5</span>]
+<span style="color:#66d9ef">set</span> ytics (<span style="color:#ae81ff">-1</span><span style="color:#f92672">,</span><span style="color:#ae81ff">-0</span><span style="color:#ae81ff">.5</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0.5</span><span style="color:#f92672">,</span><span style="color:#ae81ff">1</span>)
+<span style="color:#66d9ef">set</span> tic scale <span style="color:#ae81ff">0.5</span></code></pre></div>
 <p>We add more points to have smoother lines :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">samples</span> <span style="color:#40a070">2000</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#66d9ef">set</span> samples <span style="color:#ae81ff">2000</span></code></pre></div>
 <p>and finally customise the key :</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#007020;font-weight:bold">set</span> <span style="color:#007020">key</span> box at graph <span style="color:#40a070">0.98</span><span style="color:#666">,</span><span style="color:#40a070">0.95</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gnuplot" data-lang="gnuplot"><span style="color:#66d9ef">set</span> key box at graph <span style="color:#ae81ff">0.98</span><span style="color:#f92672">,</span><span style="color:#ae81ff">0.95</span></code></pre></div>
 <p>The full script is available <a href="https://dhaouadifiras.github.io/website/files/script" target="_blank">here</a>. The output should now look like this :
 <img style="display:block; margin-left: auto; margin-right: auto;"src="https://dhaouadifiras.github.io/website/images/gnu2.svg"></p>
 

@@ -16,41 +16,60 @@ In this step-by-step demonstration, I explain how to generate some nice-looking 
 ### 1. Prerequisites
 
 + Preferably a machine running with unix-based OS.
-+ Gnuplot version 5.2 or higher
-+ A basic LaTeX compiler. Some LaTeX packages are required but are normally included by default (calc, color, graphicx).
-
++ A text editor.
++ `gnuplot` (5.0 or higher).
++ A LaTex installation. You can for instance install the `texlive-full` package which comes with everything, or just install `texlive-latex-recommended` plus : 
+  - `texlive-fonts-recommended`
+  - `cm-super`
 
 ### 2. Creating the figure
-What I do is actually generate a .tex file with gnuplot. Then, I compile this file with Latex to obtain the output pdf. For a multistep process I generally recommend using a bash script that does all the work in one-line command.
-Consider for example the following "minimal" gnuplot script: 
+
+Since I will be using `epslatex` terminal, running the gnuplot script will generate two files :
+
+  + a .tex containing all the writing (titles, labels, key).
+  + a postscript file containing the graphics (curves, axes, grid).
+
+Then, compiling the .tex file will generate a pdf file containing the full figure. So to summarize, the process goes like this : 
+
+<center>
+    <i class="far fa-file-code"></i> script   &nbsp;&nbsp; $\underset{gnuplot}{\Longrightarrow}$ &nbsp;&nbsp; <i class="far fa-file-code"></i> figure.tex &nbsp;+&nbsp; <i class="far fa-file-image"></i> figure-inc.eps &nbsp;&nbsp; $\underset{pdflatex}{\Longrightarrow}$ &nbsp;&nbsp; <i class="far fa-file-pdf"></i> figure.pdf
+</center>
+
+To do that, we will use the `epslatex` terminal.  
+``` gnuplot
+set terminal epslatex standalone
+set output 'figure.tex'
+```
+The `standalone` option makes the generated TeX file compilable on its own. A full minimal example is given below: 
 
 ``` gnuplot
 set terminal epslatex standalone size 15cm,7cm color colortext 12
 set output 'figure.tex'
 set grid 
-plot sin(x) ,cos(x) 
+plot sin(x), cos(x) 
 ```
-If this script is saved as 'plotscript' in a directory `/path/to/dir` then running the following in a terminal :
-```bash
-cd /path/to/dir
-gnuplot plotscript
-```
-generates a 'figure.tex' file. Since we use the `standalone` option, this tex file has the necessary headings and is compilable on its own, for example by using :
-```bash
-pdflatex figure.tex
-```
+
+  1. Copy this code to a new document and save it as `script` in some directory `/path/to/dir`
+  2. In a terminal, move to this directory by running the command `cd /path/to/dir`.
+  3. Compile this code with gnuplot by running `gnuplot script` in the terminal.
+  4. Compile the output TeX file by running `pdflatex figure.tex`
+
 This will finally generate a 'figure.pdf' alongside the usual latex outputs (which you can remove if you want). The figure should look like this : 
 <img style="display:block; margin-left: auto; margin-right: auto;"src="/images/gnu1.svg">
-Test it yourself:  
 
-1. Download the <a href="/files/plotscript" target="_blank"> <i class="far fa-file"></i> test script </a> and the <a href="/files/plotfigure" target="_blank"> <i class="far fa-file"></i> bash script</a>.
-2. Put them in some directory `'/path/to/dir'` .
-3. Open a terminal and : 
+**Tip :** Since the process goes through several steps, I recommend using a bash script containing all the system commands and place it in the same directory. Here's an example : 
+
 
 ```bash
-cd path/to/dir
-bash plotfigure
+#!/bin/bash
+gnuplot script
+pdflatex --interaction=batchmode figure.tex
+rm *.aux *.log *-inc.eps *.tex *converted-to.pdf
 ```
+The option `--interaction=batchmode` hides almost all the output of the pdflatex command. The last line removes all the unnecessary latex output files to just keep the script, the bashcript and pdf output.
+
+
+
 
 ### Enhancing quality
 We can try to make the previous graph look a little bit better. We can for instance :
