@@ -18,7 +18,7 @@ In this step-by-step demonstration, I explain how to generate some nice-looking 
 + Preferably a machine running with unix-based OS.
 + A text editor.
 + `gnuplot` (5.0 or higher).
-+ A LaTex installation. You can for instance install the `texlive-full` package which comes with everything, or just install `texlive-latex-recommended` plus : 
++ A LaTex installation. You can for instance install the `texlive-full` package which comes with everything, or just install `texlive-latex-recommended` plus the packages: 
   - `texlive-fonts-recommended`
   - `cm-super`
 
@@ -35,7 +35,7 @@ Then, compiling the .tex file will generate a pdf file containing the full figur
     <i class="far fa-file-code"></i> script   &nbsp;&nbsp; $\underset{gnuplot}{\Longrightarrow}$ &nbsp;&nbsp; <i class="far fa-file-code"></i> figure.tex &nbsp;+&nbsp; <i class="far fa-file-image"></i> figure-inc.eps &nbsp;&nbsp; $\underset{pdflatex}{\Longrightarrow}$ &nbsp;&nbsp; <i class="far fa-file-pdf"></i> figure.pdf
 </center>
 
-To do that, we will use the `epslatex` terminal.  
+Therefore, the header of the gnuplot script looks like this :  
 ``` gnuplot
 set terminal epslatex standalone
 set output 'figure.tex'
@@ -79,7 +79,7 @@ We can try to make the previous graph look a little bit better. We can for insta
 3. Add more resolution points to the curves.
 4. Customize the key.
 
-But first, let us define some line styles. It helps to have some predefined styles you set at your own convenience for future uses : 
+But first, let us define some line styles. It helps to have some predefined styles which can come in handy for future uses : 
 
 ```gnuplot
 set style line 1 lc rgb '#dd181f' lt 1 lw 2 dt 2 
