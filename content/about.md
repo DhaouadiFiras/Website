@@ -49,5 +49,5 @@ I use essentially Fortran 90 for coding my main projects with a touch of MPIf90 
 
 ---
 
-A pdf version of my resume is available <a href="Resume_dhaouadi.pdf" target="blank" style="color:#FF0000;"> here <i class="far fa-file-pdf"></i></a>.
+A pdf version of my resume is available <a href="CV_Firas_Fr.pdf" target="blank" style="color:#FF0000;"> here <i class="far fa-file-pdf"></i></a>.
 
