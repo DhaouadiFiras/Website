@@ -122,3 +122,10 @@ set key box at graph 0.98,0.95
 ```
 The full script is available <a href="/files/script" target="_blank">here</a>. The output should now look like this : 
 <img style="display:block; margin-left: auto; margin-right: auto;"src="/images/gnu2.svg">
+This is it. This is the generic way in which I create my figures with gnuplot for LaTeX. Here are some other examples I created using the same process : 
+
+<img style="display:inline; margin-left: auto; margin-right: auto;"src="/images/gnu3.svg">
+<img style="display:inline; margin-left: auto; margin-right: auto;"src="/images/gnu3.svg">
+
+
+
