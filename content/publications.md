@@ -13,9 +13,9 @@ slug = "publications"
 
 
 ### Communications
+https://sites.google.com/view/waves-ow/home
 
-
-- **Waves in one World Online Seminar - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="Waves_1_World.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
+- **<a href="http://smai.emath.fr/cemracs/cemracs19/" target="blank">Waves in one World Online Seminar </a>- <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="Waves_1_World.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
 First Order hyperbolic equations approximating the Defocusing NonLinear Schrödinger equation.
 
 - **IUSTI Student Seminar - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="CCS_Presentation_2020.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
