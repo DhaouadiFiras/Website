@@ -13,14 +13,22 @@ slug = "publications"
 
 
 ### Communications
-- **<a href="https://shark-fv.eu/shark2018/" target="blank">SHARK-FV 2018</a> - <i class="fas fa-map-marker-alt "></i> Minho, Portugal :** <a href="Dhaouadi_SHARK2018.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a> &nbsp; <a href="SHARK_2018_Poster.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Poster </a>   
-Extended Lagrangian approach for the defocusing non-linear Schrödinger equation.
-- **<a href="https://shark-fv.eu/shark2019/" target="blank">SHARK-FV 2019</a> - <i class="fas fa-map-marker-alt "></i> Minho, Portugal :** <a href="Dhaouadi_SHARK2019.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>   
-A hyperbolic augmented model for thin flows.
-- **<a href="http://smai.emath.fr/cemracs/cemracs19/" target="blank">CEMRACS 2019</a> - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="dhaouadi_Cemracs.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
-Augmented Lagrangian approach for the defocusing non-linear Schrödinger Equation.
-- **<a href="http://smai.emath.fr/cemracs/cemracs19/" target="blank">CEMRACS 2019</a> - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="Tolosa.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
-Stability theory for finite-difference schemes using modified equations.
+
+
+- **Waves in one World Online Seminar - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="Waves_1_World.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
+First Order hyperbolic equations approximating the Defocusing NonLinear Schrödinger equation.
+
 - **IUSTI Student Seminar - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="CCS_Presentation_2020.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
 A hyperbolic augmented model for the NonLinear Schrödinger equation.
 
+- **<a href="http://smai.emath.fr/cemracs/cemracs19/" target="blank">CEMRACS 2019</a> - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="Tolosa.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
+Stability theory for finite-difference schemes using modified equations.
+
+- **<a href="http://smai.emath.fr/cemracs/cemracs19/" target="blank">CEMRACS 2019</a> - <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="dhaouadi_Cemracs.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
+Augmented Lagrangian approach for the defocusing non-linear Schrödinger Equation.
+
+- **<a href="https://shark-fv.eu/shark2019/" target="blank">SHARK-FV 2019</a> - <i class="fas fa-map-marker-alt "></i> Minho, Portugal :** <a href="Dhaouadi_SHARK2019.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>   
+A hyperbolic augmented model for thin flows.
+
+- **<a href="https://shark-fv.eu/shark2018/" target="blank">SHARK-FV 2018</a> - <i class="fas fa-map-marker-alt "></i> Minho, Portugal :** <a href="Dhaouadi_SHARK2018.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a> &nbsp; <a href="SHARK_2018_Poster.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Poster </a>   
+Extended Lagrangian approach for the defocusing non-linear Schrödinger equation.
