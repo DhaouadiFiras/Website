@@ -13,7 +13,7 @@ slug = "publications"
 
 
 ### Communications
-- **<a href="http://smai.emath.fr/cemracs/cemracs19/" target="blank">Waves in one World Seminar </a>- <i class="fas fa-map-marker-alt "></i> Online at home :**  <a href="Waves_1_World.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
+- **<a href="https://media.ed.ac.uk/media/One+World+Waves+-+F+Dhaouadi/1_20eurs1h" target="blank">Waves in one World Seminar </a>- <i class="fas fa-map-marker-alt "></i> Online at home :**  <a href="Waves_1_World.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
 First Order hyperbolic equations approximating the Defocusing NonLinear Schrödinger equation.
 - IUSTI Student Seminar **- <i class="fas fa-map-marker-alt "></i> Marseille, France :**  <a href="CCS_Presentation_2020.pdf" target="blank" style="color:#FF0000;"> <i class="far fa-file-pdf"></i> Slides </a>  
 A hyperbolic augmented model for the NonLinear Schrödinger equation.
