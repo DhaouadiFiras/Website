@@ -9,8 +9,8 @@ math = "true"
 
 ### <i class="fas fa-graduation-cap"></i> Education 
 
-- **<i class="far fa-calendar-alt"></i> 2017-Present - <i class="fas fa-map-marker-alt "></i> Université Paul Sabatier-Institut de Mathématiques de Toulouse:**  
-PhD in applied maths : Mathematical analysis and numerical simulation of dispersive models by augmented Lagrangians.
+- **<i class="far fa-calendar-alt"></i> 2017-Dec 2020 - <i class="fas fa-map-marker-alt "></i> Université Paul Sabatier-Institut de Mathématiques de Toulouse:**  
+PhD in applied maths : Mathematical analysis and numerical simulation of dispersive models by augmented Lagrangians. The manuscript is available <a href="Thesis.pdf" target="blank" style="color:#FF0000;">  <i class="far fa-file-pdf"></i></a>.
 - **<i class="far fa-calendar-alt"></i> 2016-2017 - <i class="fas fa-map-marker-alt "></i> Aix-Marseille Université:**  
 Master's degree in Multiphase Flows, Energetics and Combustion.
 - **<i class="far fa-calendar-alt"></i> 2013-2016 - <i class="fas fa-map-marker-alt "></i> Ecole Nationale d'Ingénieurs de Tunis:**  
