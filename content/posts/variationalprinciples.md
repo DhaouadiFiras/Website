@@ -31,14 +31,3 @@ Now applying Hamilton's principle to the Lagrangian $\mathcal{L} = E_k-E_p$ yiel
 Let's explain what this means. The first two equations mean that there is no acceleration in the $x$ and $y$ direction. If at the instant you dropped the ball you did not give any speed along $x$ or $y$, then the ball will not acquire any by itself. Therefore, if the ball moved, it will be along the z axis. The last equation means that the acceleration in the $z$ direction is equal to $g$. 
 
 </p>  
-
-#### Can you do the same for fluid dynamics ? 
-<p style="text-align: justify"> 
-<img style="float: right;margin-left:20px;margin-bottom:10px" src="/images/swater.svg">
-Unlike the ball which was simply identified by the coordinates of its center, fluids change shape most of the time and can also include volume expansions, solid-fluid interactions and all the complications you can think of. Therefore, there is more sense into identifying the state of fluids by the profile of their observable quantities and not just their value at one point. It's also reasonable not to try to investigate everything at once, it's just unthinkable. Generally, we look for all the simplifications we can find, ignore all the phenomena we don't want to look at, and still pray we get a model we can work with. 
-</p>
-<p style="text-align: justify"> 
-Consider for example, 
-</p>
-
-#### Knowing the equations is never enough
