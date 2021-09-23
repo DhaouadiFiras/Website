@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Firas&#39; Personal Website</title>
@@ -6,18 +6,14 @@
     <description>Recent content in Posts on Firas&#39; Personal Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://dhaouadifiras.github.io/website/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dhaouadifiras.github.io/website/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Producing figures for LaTeX documents with Gnuplot</title>
       <link>https://dhaouadifiras.github.io/website/posts/gnuplot/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dhaouadifiras.github.io/website/posts/gnuplot/</guid>
-      <description>Gnuplot is a very handy tool when it comes to producing figures to be included into your work documens, be it a report, article or any of the like. It offers much capability and enough options to produce graphs that boost the quality and the presentation of your document. But, as is the case with any programming language, it takes some time and patience to learn how to actually it efficiently.</description>
+      <description>It&amp;rsquo;s formatted as vector graphics : Vector graphics are more reliable when it comes to quality. Unless you use some trillions of pixels, a bitmap image turns very quickly into a mess when you zoom for details. Its Labels and axis graduations are effortlessly visible : This is important especially in slides for oral presentations. Graduations and labels must be clearly visible, otherwise the figure may lose its purpose. It blends well with the surroundings where it&amp;rsquo;s inserted : The figure should be in harmony with the text around it.</description>
     </item>
     
     <item>
@@ -26,7 +22,7 @@
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://dhaouadifiras.github.io/website/posts/hamilton/</guid>
-      <description>When we effortlessly let go of an object, say a tennis ball for example, we instinctively know it will fall straightforwardly to the ground. such a predicition is based on our experience and daily observations. If the ball simply went up instead of falling, this would not feel right, because it was never observed before. This simple exeperience shows that nature is picky: for given circumstances, it does not behave randomly but rather seems to carefully choose one realizable outcome out of all possibilities (at least in classical mechanics).</description>
+      <description></description>
     </item>
     
   </channel>
