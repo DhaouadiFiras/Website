@@ -1,7 +1,0 @@
-#Formatting output
-reset
-set terminal epslatex standalone size 15cm,7cm color colortext 12
-set output 'figure.tex'
-
-set grid 
-plot sin(x) ,cos(x) 
