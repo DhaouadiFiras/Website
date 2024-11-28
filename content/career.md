@@ -5,6 +5,7 @@ math = "true"
 
 +++
 
+##### A Pdf version of my curriculum is available {{< attach "CV_Dhaouadi.pdf" here >}}.
 
 ### {{< fas "book" >}} Research experience 
 - **{{< far "calendar-alt" >}} 19/12/2022 - present - {{< fas "map-marker-alt" >}} Dipartimento di Ingegneria Civile, Ambientale e Meccanica, Trento**

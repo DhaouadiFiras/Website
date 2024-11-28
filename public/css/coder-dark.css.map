@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder-dark.css",
-	"sourceRoot": "/home/firas/Desktop/website",
+	"sourceRoot": "/home/firas/website",
 	"sources": [
 		"assets/scss/coder-dark.scss",
 		"assets/scss/_variables.scss",

@@ -10373,7 +10373,7 @@ readers do not read off random characters that represent icons */
 
 html {
   box-sizing: border-box;
-  font-size: 60%; }
+  font-size: 50%; }
 
 body {
   color: #212121;

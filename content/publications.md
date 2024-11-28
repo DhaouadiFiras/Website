@@ -4,12 +4,12 @@ slug = "publications"
 +++
 
 ### Articles in peer-reviewed journals
-1. Dhaouadi, F., Dumbser, M. and Gavrilyuk, S., 2024. A first-order hyperbolic reformulation of the Cahn-Hilliard equation. arXiv preprint arXiv:2408.03862. 
+1. Dhaouadi, F., Dumbser, M. and Gavrilyuk, S., 2024. **A first-order hyperbolic reformulation of the Cahn-Hilliard equation**. arXiv preprint arXiv:2408.03862. 
 {{< paperlinks 
     preprint = "https://arxiv.org/abs/2408.03862"
     review = "yes"
  >}}
-1. Río-Martín, L., Dhaouadi, F. and Dumbser, M., 2024. An exactly curl-free finite-volume scheme for a hyperbolic compressible barotropic two-phase model. arXiv preprint arXiv:2403.18724.
+1. Río-Martín, L., Dhaouadi, F. and Dumbser, M., 2024. **An exactly curl-free finite-volume scheme for a hyperbolic compressible barotropic two-phase model**. arXiv preprint arXiv:2403.18724.
 {{< paperlinks 
     preprint = "https://arxiv.org/abs/2403.18724"
 
@@ -17,7 +17,7 @@ slug = "publications"
 
     file = "SP_TwoFluid.pdf"
  >}}
-1. Dhaouadi, F. and Gavrilyuk, S., 2024. An Eulerian hyperbolic model for heat transfer derived via Hamilton’s principle: analytical and numerical study. *Proceedings of the Royal Society A*, 480(2283), p.20230440. 
+1. Dhaouadi, F. and Gavrilyuk, S., 2024. **An Eulerian hyperbolic model for heat transfer derived via Hamilton’s principle: analytical and numerical study**. *Proceedings of the Royal Society A*, 480(2283), p.20230440. 
  {{< paperlinks 
     preprint = "https://arxiv.org/abs/2305.12229"
 
@@ -27,27 +27,27 @@ slug = "publications"
 
     file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic Heat.pdf"
  >}}
-1. Dhaouadi, F. and Dumbser, M., 2023. A structure-preserving finite volume scheme for a hyperbolic reformulation of the Navier–Stokes–Korteweg equations. *Mathematics*, 11(4), p.876.
+1. Dhaouadi, F. and Dumbser, M., 2023. **A structure-preserving finite volume scheme for a hyperbolic reformulation of the Navier–Stokes–Korteweg equations**. *Mathematics*, 11(4), p.876.
 {{< paperlinks 
 
     journal = "https://www.mdpi.com/2227-7390/11/4/876"
 
     file = "Dhaouadi Dumbser 2023 - CurlFreeNSK.pdf"
  >}}
-1. Dhaouadi, F. and Dumbser, M., 2022. A first order hyperbolic reformulation of the Navier-Stokes-Korteweg system based on the GPR model and an augmented Lagrangian approach. *Journal of Computational Physics*, 470, p.111544.
+1. Dhaouadi, F. and Dumbser, M., 2022. **A first order hyperbolic reformulation of the Navier-Stokes-Korteweg system based on the GPR model and an augmented Lagrangian approach**. *Journal of Computational Physics*, 470, p.111544.
 {{< paperlinks 
 
     journal = "https://doi.org/10.1016/j.jcp.2022.111544"
 
     file = "Dhaouadi Dumbser 2022 - Hyperbolic NSK.pdf"
  >}}
-1. Dhaouadi, F., Gavrilyuk, S. and Vila, J.P., 2022. Hyperbolic relaxation models for thin films down an inclined plane. *Applied Mathematics and Computation*, 433, p.127378.
+1. Dhaouadi, F., Gavrilyuk, S. and Vila, J.P., 2022. **Hyperbolic relaxation models for thin films down an inclined plane**. *Applied Mathematics and Computation*, 433, p.127378.
 {{< paperlinks 
     journal = "https://doi.org/10.1016/j.amc.2022.127378"
 
     file = "Dhaouadi Gavrilyuk Vila 2022 - Hyperbolic Thin Films"
  >}}
-1. Dhaouadi F, Duval E, Tkachenko S,Vila J-P. Stability theory for some scalar finite difference schemes : Validity of the modified equations approach. *ESAIM: Proceedings and Surveys.* 
+1. Dhaouadi F, Duval E, Tkachenko S,Vila J-P. **Stability theory for some scalar finite difference schemes : Validity of the modified equations approach**. *ESAIM: Proceedings and Surveys.* 
  {{< paperlinks 
      preprint = "https://arxiv.org/abs/2004.12879"
      
@@ -55,7 +55,7 @@ slug = "publications"
      
      file = "Dhaouadi et-al 2020 - Stability of Modified equations.pdf"
  >}}
-1. Dhaouadi F, Favrie N, Gavrilyuk S. Extended Lagrangian approach for the defocusing nonlinear Schrödinger equation. *Stud Appl Math.* 2018;1–23. 
+1. Dhaouadi F, Favrie N, Gavrilyuk S. **Extended Lagrangian approach for the defocusing nonlinear Schrödinger equation**. *Stud Appl Math.* 2018;1–23. 
 {{< paperlinks 
 preprint = "https://hal.archives-ouvertes.fr/hal-01779915"
 journal = "https://onlinelibrary.wiley.com/doi/abs/10.1111/sapm.12238"
