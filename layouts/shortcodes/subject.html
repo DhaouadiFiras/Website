@@ -1,0 +1,12 @@
+{{ $name := .Get "name"  }}
+{{ $topics := .Get "topics" }}
+{{ $hours := .Get "hours" }}
+{{ $level := .Get "level" }}
+{{ $proglang := .Get "proglang" }}
+
+
+{{ if $name  }} <i class="fas fa-folder"></i> <strong> Subject: </strong> {{ $name }} <br> {{end}}
+{{ if $topics  }} <i class="fas fa-file-lines"></i> <strong> Topics: </strong> {{ $topics }} <br> {{end}}
+{{ if $hours }} <i class="fas fa-clock"></i> <strong> Total hours: </strong> {{ $hours }} <br> {{end}}  
+{{ if $level }} <i class="fas fa-graduation-cap"></i> <strong> Level: </strong> {{ $level }} <br> {{end}}  
+{{ if $proglang }} <i class="fas fa-code"></i> <strong> Programming language: </strong> {{ $proglang }} {{end}}  
