@@ -4,21 +4,28 @@ slug = "publications"
 +++
 
 ### Articles in peer-reviewed journals
-1. Dhaouadi, F., Dumbser, M. and Gavrilyuk, S., 2024. **A first-order hyperbolic reformulation of the Cahn-Hilliard equation**. arXiv preprint arXiv:2408.03862. 
-{{< paperlinks 
+1.  {{< paperlinks 
+    year     = "2024"
+    title    = "A first-order hyperbolic reformulation of the Cahn-Hilliard equation"
+    authors  = "Dhaouadi, F., Dumbser, M. and Gavrilyuk, S."
+    reference = "arXiv:2408.03862. "
     preprint = "https://arxiv.org/abs/2408.03862"
     review = "yes"
  >}}
-1. Río-Martín, L., Dhaouadi, F. and Dumbser, M., 2024. **An exactly curl-free finite-volume scheme for a hyperbolic compressible barotropic two-phase model**. arXiv preprint arXiv:2403.18724.
-{{< paperlinks 
+1. {{< paperlinks 
+    year     = "2024"
+    title    = "An exactly curl-free finite-volume scheme for a hyperbolic compressible barotropic two-phase model"
+    authors  = "Río-Martín, L., Dhaouadi, F. and Dumbser, M."
+    reference = "Journal of Scientific Computing 102 (1), 13"
     preprint = "https://arxiv.org/abs/2403.18724"
-
     journal = "https://link.springer.com/article/10.1007/s10915-024-02733-9"
-
     file = "SP_TwoFluid.pdf"
  >}}
-1. Dhaouadi, F. and Gavrilyuk, S., 2024. **An Eulerian hyperbolic model for heat transfer derived via Hamilton’s principle: analytical and numerical study**. *Proceedings of the Royal Society A*, 480(2283), p.20230440. 
- {{< paperlinks 
+1. {{< paperlinks 
+    year     = "2024"
+    title    = "An Eulerian hyperbolic model for heat transfer derived via Hamilton’s principle: analytical and numerical study"
+    authors  = "Dhaouadi, F. and Gavrilyuk, S."
+    reference = "Proceedings of the Royal Society A, 480(2283), p.20230440."
     preprint = "https://arxiv.org/abs/2305.12229"
 
     journal = "https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2023.0440"
@@ -27,39 +34,47 @@ slug = "publications"
 
     file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic Heat.pdf"
  >}}
-1. Dhaouadi, F. and Dumbser, M., 2023. **A structure-preserving finite volume scheme for a hyperbolic reformulation of the Navier–Stokes–Korteweg equations**. *Mathematics*, 11(4), p.876.
-{{< paperlinks 
-
+1. {{< paperlinks 
+    year     = "2023"
+    title    = "A structure-preserving finite volume scheme for a hyperbolic reformulation of the Navier–Stokes–Korteweg equations"
+    authors  = "Dhaouadi, F. and Dumbser, M., 2023"
+    reference = "Mathematics, 11(4), p.876."
     journal = "https://www.mdpi.com/2227-7390/11/4/876"
-
     file = "Dhaouadi Dumbser 2023 - CurlFreeNSK.pdf"
  >}}
-1. Dhaouadi, F. and Dumbser, M., 2022. **A first order hyperbolic reformulation of the Navier-Stokes-Korteweg system based on the GPR model and an augmented Lagrangian approach**. *Journal of Computational Physics*, 470, p.111544.
-{{< paperlinks 
-
+1. {{< paperlinks 
+    year     = "2022"
+    title    = "A first order hyperbolic reformulation of the Navier-Stokes-Korteweg system based on the GPR model and an augmented Lagrangian approach"
+    authors  = "Dhaouadi, F. and Dumbser, M., 2023"
+    reference = "Journal of Computational Physics, 470, p.111544."
     journal = "https://doi.org/10.1016/j.jcp.2022.111544"
-
     file = "Dhaouadi Dumbser 2022 - Hyperbolic NSK.pdf"
  >}}
-1. Dhaouadi, F., Gavrilyuk, S. and Vila, J.P., 2022. **Hyperbolic relaxation models for thin films down an inclined plane**. *Applied Mathematics and Computation*, 433, p.127378.
-{{< paperlinks 
+1. {{< paperlinks 
+    year     = "2022"
+    title    = "Hyperbolic relaxation models for thin films down an inclined plane"
+    authors  = "Dhaouadi, F., Gavrilyuk, S. and Vila, J.P."
+    reference = "Applied Mathematics and Computation, 433, p.127378."
     journal = "https://doi.org/10.1016/j.amc.2022.127378"
-
     file = "Dhaouadi Gavrilyuk Vila 2022 - Hyperbolic Thin Films"
  >}}
-1. Dhaouadi F, Duval E, Tkachenko S,Vila J-P. **Stability theory for some scalar finite difference schemes : Validity of the modified equations approach**. *ESAIM: Proceedings and Surveys.* 
- {{< paperlinks 
-     preprint = "https://arxiv.org/abs/2004.12879"
-     
-     journal = "https://www.esaim-proc.org/articles/proc/pdf/2021/01/proc2107008.pdf"
-     
-     file = "Dhaouadi et-al 2020 - Stability of Modified equations.pdf"
+1. {{< paperlinks 
+    year     = "2021"
+    title    = "Stability theory for some scalar finite difference schemes : Validity of the modified equations approach"
+    authors  = "Dhaouadi F, Duval E, Tkachenko S,Vila J-P."
+    reference = "ESAIM: Proceedings and Surveys 70, 124-136"
+    preprint = "https://arxiv.org/abs/2004.12879"  
+    journal = "https://www.esaim-proc.org/articles/proc/pdf/2021/01/proc2107008.pdf"
+    file = "Dhaouadi et-al 2020 - Stability of Modified equations.pdf"
  >}}
-1. Dhaouadi F, Favrie N, Gavrilyuk S. **Extended Lagrangian approach for the defocusing nonlinear Schrödinger equation**. *Stud Appl Math.* 2018;1–23. 
-{{< paperlinks 
-preprint = "https://hal.archives-ouvertes.fr/hal-01779915"
-journal = "https://onlinelibrary.wiley.com/doi/abs/10.1111/sapm.12238"
-file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic DNLS.pdf"
+1. {{< paperlinks 
+    year     = "2018"
+    title    = "Extended Lagrangian approach for the defocusing nonlinear Schrödinger equation"
+    authors  = "Dhaouadi F, Favrie N, Gavrilyuk S."
+    reference = "Stud Appl Math. 2018;1–23."
+    preprint = "https://hal.archives-ouvertes.fr/hal-01779915"
+    journal = "https://onlinelibrary.wiley.com/doi/abs/10.1111/sapm.12238"
+    file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic DNLS.pdf"
  >}} 
 
 ### Dissemination activities
@@ -88,7 +103,7 @@ file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic DNLS.pdf"
     slides     = "DHAOUADI_IMB.pdf"
  >}} 
 1. {{< presentation 
-    conference = "PROHYP 2023"
+    conference = "PROHYP 2024"
     location   = "Trento, Italy"
     link       = "https://webmagazine.unitn.it/evento/dicam/119332/3rd-international-workshop-on-perspectives-on-multiphase-fluid-dynamics"
     date       = "Apr. 2024"
