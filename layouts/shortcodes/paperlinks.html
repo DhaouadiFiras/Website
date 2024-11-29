@@ -5,31 +5,31 @@
   {{ if .Get "review" }}
     <i class="fa-regular fa-clock" style="color:#545454;font-size:0.9em;"></i>
     <i style="color:#545454;font-size:0.9em;">
-      <strong>In review</strong>
+      <strong>In review</strong> &nbsp;&nbsp;
     </i>
   {{ end }}
   {{ if .Get "preprint" }}
     <a href="{{ .Get "preprint" }}" target="blank" style="font-size:0.9em;">
       <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      <strong>preprint</strong>
+      <strong>preprint</strong> &nbsp;&nbsp;
     </a>
   {{ end }}
   {{ if .Get "journal" }}
     <a href="{{ .Get "journal" }}" target="blank" style="font-size:0.9em;">
       <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      <strong>journal</strong>
+      <strong>journal</strong> &nbsp;&nbsp;
     </a>
   {{ end }}
   {{ if .Get "file" }}
     <a href="{{ .Get "file" }}" target="blank" style="color:#FF0000;font-size:0.9em;">
       <i class="far fa-file-pdf"></i>
-      <strong>Accepted Copy</strong>
+      <strong>Accepted Copy</strong> &nbsp;&nbsp;
     </a>
   {{ end }}
   {{ if .Get "code" }}
     <a href="{{ .Get "code" }}" target="blank" style="color:#b649d6;font-size:0.9em;">
       <i class="fas fa-code"></i>
-      <strong>Code</strong>
+      <strong>Code</strong> &nbsp;&nbsp;
     </a>
   {{ end }}
 </div>
