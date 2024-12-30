@@ -156,7 +156,7 @@ pre = "far fa-bookmark"
 name = "Project PROMETHEUS"
 weight = 3
 url = "/prometheus/"
-pre ="far fa-id-badge"
+pre ="fas fa-atom"
 
 
 [[languages.en.menu.main]]
