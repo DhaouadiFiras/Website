@@ -1,6 +1,6 @@
 +++
 title = "Curriculum Vitae"
-slug = "career"
+slug = "curriculum"
 math = "true"
 
 +++

@@ -32,7 +32,7 @@ slug = "publications"
 
     code = "https://royalsocietypublishing.org/doi/suppl/10.1098/rspa.2023.0440"
 
-    file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic Heat.pdf"
+    file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic DNLS.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2023"
@@ -56,7 +56,7 @@ slug = "publications"
     authors  = "Dhaouadi, F., Gavrilyuk, S. and Vila, J.P."
     reference = "Applied Mathematics and Computation, 433, p.127378."
     journal = "https://doi.org/10.1016/j.amc.2022.127378"
-    file = "Dhaouadi Gavrilyuk Vila 2022 - Hyperbolic Thin Films"
+    file = "Dhaouadi Gavrilyuk Vila 2022 - Hyperbolic Thin Films.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2021"

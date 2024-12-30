@@ -1,6 +1,6 @@
 +++
 title = "" 
-slug = "projects"
+slug = "prometheus"
 +++
 # PROMETHEUS: Hy{{< colored  P "#0065f3">}}erbolic {{< colored  R "#0065f3">}}eformulation {{< colored  O "#0065f3">}}f dispersive {{< colored  ME "#0065f3">}}chanics: {{< colored  TH "#0065f3">}}eory and n{{< colored  U "#0065f3">}}meric{{< colored  S "#0065f3">}}
 
