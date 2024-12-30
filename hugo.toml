@@ -136,7 +136,7 @@ languageName = ":uk:"
 [[languages.en.menu.main]]
 name = "Curriculum"
 weight = 1
-url = "/career/"
+url = "/curriculum/"
 pre ="far fa-id-badge"
 
 
@@ -155,7 +155,7 @@ pre = "far fa-bookmark"
 [[languages.en.menu.main]]
 name = "Project PROMETHEUS"
 weight = 3
-url = "/projects/"
+url = "/prometheus/"
 pre ="far fa-id-badge"
 
 
