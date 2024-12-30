@@ -2,11 +2,17 @@
   <strong>{{ .Get "title" }}</strong> ({{ .Get "year" }})
   <div style="color:#3b3a3a; font-size:0.85em;">{{ .Get "authors" }}</div>
   <div style="color:#3b3a3a; font-size:0.85em;">{{ .Get "reference" }}</div>
-  {{ if .Get "review" }}
+  {{ $status := .Get "status" }}
+  {{ if eq $status "review" }}
     <i class="fa-regular fa-clock" style="color:#545454;font-size:0.9em;"></i>
     <i style="color:#545454;font-size:0.9em;">
       <strong>In review</strong> &nbsp;&nbsp;
     </i>
+  {{ else if eq $status "accepted" }}
+    <i class="fa-solid fa-check-to-slot" style="color:#9a0000;font-size:0.9em;"></i>
+    <a style="color:#9a0000;font-size:0.9em;">
+      <strong>Accepted for publication </strong> &nbsp;&nbsp;
+    </a>
   {{ end }}
   {{ if .Get "preprint" }}
     <a href="{{ .Get "preprint" }}" target="blank" style="font-size:0.9em;">

@@ -10,7 +10,7 @@ slug = "publications"
     authors  = "Dhaouadi, F., Dumbser, M. and Gavrilyuk, S."
     reference = "arXiv:2408.03862. "
     preprint = "https://arxiv.org/abs/2408.03862"
-    review = "yes"
+    status = "accepted"
  >}}
 1. {{< paperlinks 
     year     = "2024"

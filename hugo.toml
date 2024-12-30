@@ -134,7 +134,7 @@ author = "authors"
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-name = "Career"
+name = "Curriculum"
 weight = 1
 url = "/career/"
 pre ="far fa-id-badge"
@@ -153,8 +153,15 @@ pre = "far fa-bookmark"
 #pre = "far fa-edit"
 
 [[languages.en.menu.main]]
+name = "Project PROMETHEUS"
+weight = 3
+url = "/projects/"
+pre ="far fa-id-badge"
+
+
+[[languages.en.menu.main]]
 name = "Contact"
-weight = 5
+weight = 4
 url = "/contact/"
 pre = "far fa-comment-alt"
 

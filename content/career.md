@@ -1,11 +1,11 @@
 +++
-title = "Career"
+title = "Curriculum Vitae"
 slug = "career"
 math = "true"
 
 +++
 
-##### A Pdf version of my curriculum is available {{< attach "CV_Dhaouadi.pdf" here >}}.
+##### A more detailed version of my curriculum is available in PDF format {{< attach "CV_Dhaouadi.pdf" here >}}.
 
 ### {{< fas "book" >}} Research experience 
 - **{{< far "calendar-alt" >}} 19/12/2022 - present - {{< fas "map-marker-alt" >}} Dipartimento di Ingegneria Civile, Ambientale e Meccanica, Trento**
@@ -15,7 +15,47 @@ Postdoctoral fellowship.
 ---
 
 
-
+### {{< fas "graduation-cap" >}} Projects / Fundraising
+- {{< project
+        title   = "PI of the ISCRA type C project (ESTHER - HP10C6276F)"
+        year    = 2022
+        topic   = "Efficient STructure preserving schemes for a HypErbolic Reformulation of dispersive mechanics."
+        value   = "75.000 CPU hours"
+        type    = "hours"
+>}}
+{{<line 0.5>}}
+- {{< project
+        title   = "Co-PI of ISCRA type B project (NEMESIS - HP10B22TLQ)"
+        year    = 2022-2023
+        topic   = "NumErical MEthodS for complex hyperbolIc flowS."
+        value   = "2.500.000 CPU hours"
+        type    = "hours"
+>}}
+{{<line 0.5>}}
+- {{< project
+        title   = "PI of PROMETHEUS project"
+        year    = 2022-2025
+        topic   = "Hyperbolic reformulation of dispersive mechanics: theory and numerics."
+        value   = "150.000€"
+        type    = "money"
+>}}
+{{<line 0.5>}}
+- {{< project
+        title   = "UniTn Starting Grant"
+        year    = 2021-2022
+        topic   = "Awarded a grant for writing competitive international proposals."
+        value   = "12.000€"
+        type    = "money"
+>}}
+{{<line 0.5>}}
+- {{< project
+        title   = "Med-Accueil Exchange Program Scholarship"
+        year    = 2016
+        topic   = "Funding for Master’s studies at Aix-Marseille Université."
+        value   = "5.400€"
+        type    = "money"
+>}}
+--- 
 
 ### {{< fas "graduation-cap" >}} Education
 
@@ -29,6 +69,7 @@ National Diploma of Engineering in Modelling for Industry and Services. (MIndS)
 - **{{< far "calendar-alt" >}} 2011-2013 - {{< fas "map-marker-alt" >}} Institut Préparatoire aux Etudes d'Ingénieurs d'El Manar:**  
 Pre-engineering courses majoring in maths and physics
 ---
+
 
 
 ### {{< fas "chalkboard-teacher" >}} Teaching
