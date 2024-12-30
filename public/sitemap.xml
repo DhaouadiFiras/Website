@@ -83,11 +83,11 @@
     <loc>http://localhost:1313/authors/hugo-authors/</loc>
     <lastmod>2023-01-05T01:15:29+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+  </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/career/</loc>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/publications/</loc>
   </url>

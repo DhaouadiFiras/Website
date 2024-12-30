@@ -1,0 +1,21 @@
+{{ $title := .Get "title" }}
+{{ $year := .Get "year" }}
+{{ $topic := .Get "topic" }}
+{{ $value := .Get "value" }}
+{{ $type := .Get "type" }}
+
+{{ if $title }}
+  <i class="fas fa-calendar"></i> <strong>{{ $year }} - {{ $title }}</strong><br>
+{{ end }}
+
+{{ if $topic }}
+  <i class="fas fa-file-lines"></i> <strong>Topic:</strong> {{ $topic }}<br>
+{{ end }}
+
+{{ if $value }}
+  {{ if eq $type "money" }}
+    <i class="fas fa-euro-sign"></i> <strong>Value:</strong> {{ $value }}<br>
+  {{ else if eq $type "hours" }}
+    <i class="fas fa-clock"></i> <strong>Value:</strong> {{ $value }}<br>
+  {{ end }}
+{{ end }}
