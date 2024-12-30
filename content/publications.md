@@ -32,7 +32,7 @@ slug = "publications"
 
     code = "https://royalsocietypublishing.org/doi/suppl/10.1098/rspa.2023.0440"
 
-    file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic DNLS.pdf"
+    file = "Dhaouadi Gavrilyuk 2024 - Hyperbolic Heat.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2023"
