@@ -99,7 +99,7 @@ slug = "publications"
     location   = "Bordeaux, France"
     link       = "https://www.math.u-bordeaux.fr/imb/seminaire-calcul-scientifique-et-modelisation?lang=fr"
     date       = "Jun. 2024"
-    title      = "Hyperbolic models for diffusion equations"
+    title      = "An Eulerian hyperbolic model for heat transfer derived via Hamilton's principle"
     slides     = "DHAOUADI_IMB.pdf"
  >}} 
 1. {{< presentation 
@@ -107,7 +107,7 @@ slug = "publications"
     location   = "Trento, Italy"
     link       = "https://webmagazine.unitn.it/evento/dicam/119332/3rd-international-workshop-on-perspectives-on-multiphase-fluid-dynamics"
     date       = "Apr. 2024"
-    title      = "An Eulerian hyperbolic model for heat transfer derived via Hamilton’s principle"
+    title      = "Hyperbolic models for diffusion equations"
     slides     = "Dhaouadi_PROHYP2024.pdf"
  >}} 
 1. {{< presentation 

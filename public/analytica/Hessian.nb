@@ -1,0 +1,227 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7450,        219]
+NotebookOptionsPosition[      7101,        205]
+NotebookOutlinePosition[      7496,        221]
+CellTagsIndexPosition[      7453,        218]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"EXPORT", " ", "HESSIAN", " ", "OF", " ", "ENERGY"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "ENERGY", " ", "TERMS", " ", "FOR", " ", "ENERGY", " ", "HESSIAN"}], " ", 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]1", "=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["\[Rho]", "\[Gamma]"], "/", 
+        RowBox[{"(", 
+         RowBox[{"\[Gamma]", "-", "1"}], ")"}]}], ")"}], 
+      RowBox[{"Exp", "[", 
+       FractionBox["S", "cv"], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]2", "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], "\[Rho]", " ", 
+       SubscriptBox["u", "l"], 
+       SubscriptBox["u", "l"]}], "/.", 
+      RowBox[{"Einstein", "[", "3", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]3", "=", 
+     RowBox[{"Simplify", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "4"], "\[Rho]", " ", 
+         SuperscriptBox["cs", "2"], " ", 
+         SubscriptBox["devG", 
+          RowBox[{"l", ",", "m"}]], 
+         SubscriptBox["devG", 
+          RowBox[{"l", ",", "m"}]]}], "/.", 
+        RowBox[{"Einstein", "[", "3", "]"}]}], "/.", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"mat_", "[", 
+          RowBox[{"i_", ",", "j_"}], "]"}], "/;", 
+         RowBox[{"(", 
+          RowBox[{"MatrixQ", "[", "mat", "]"}], ")"}]}], ":>", 
+        RowBox[{"mat", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", ",", "j"}], "]"}], "]"}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]4", "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], 
+       SuperscriptBox["ch", "2"], "\[Rho]", " ", 
+       SubscriptBox["J", "l"], 
+       SubscriptBox["J", "l"]}], "/.", 
+      RowBox[{"Einstein", "[", "3", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]5", "=", 
+     RowBox[{
+      FractionBox["1", "2"], "\[Rho]", " ", 
+      SuperscriptBox["q", "2"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]6", "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], "\[Rho]", " ", 
+       SuperscriptBox["cd", "2"], 
+       SubscriptBox["H", "l"], 
+       SubscriptBox["H", "l"]}], "/.", 
+      RowBox[{"Einstein", "[", "3", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]7", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "2"], "\[Rho]", " ", 
+        SuperscriptBox["cm", "2"], 
+        SubscriptBox["M", "l"], 
+        SubscriptBox["M", "l"]}], "+", 
+       RowBox[{"\[Rho]", " ", "\[Tau]d", " ", 
+        SuperscriptBox["cw", "2"], "\[Omega]"}]}], "/.", 
+      RowBox[{"Einstein", "[", "3", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]", "=", 
+     RowBox[{
+      RowBox[{
+      "\[ScriptCapitalE]1", "+", "\[ScriptCapitalE]2", "+", 
+       "\[ScriptCapitalE]3", "+", "\[ScriptCapitalE]4", "+", 
+       "\[ScriptCapitalE]5", "+", "\[ScriptCapitalE]6", "+", 
+       "\[ScriptCapitalE]7"}], "//", "Esthetic"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]cons", "=", 
+     RowBox[{
+      RowBox[{"Esthetic", "[", "\[ScriptCapitalE]", "]"}], "/.", 
+      RowBox[{
+       RowBox[{"u_", "/;", 
+        RowBox[{"MemberQ", "[", 
+         RowBox[{"Vclean", ",", "u"}], "]"}]}], ":>", 
+       RowBox[{"v", "[", 
+        RowBox[{
+         RowBox[{"Position", "[", 
+          RowBox[{"Vclean", ",", "u"}], "]"}], "//.", "unbracket"}], 
+        "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[ScriptCapitalE]cons", "=", 
+     RowBox[{"Simplify", "[", 
+      RowBox[{"\[ScriptCapitalE]cons", "/.", "Prim2ConsRules"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"EQQ", "=", 
+     RowBox[{"Simplify", "[", 
+      RowBox[{
+       SubscriptBox["\[Del]", "dummyConservative"], 
+       RowBox[{
+        SubscriptBox["\[Del]", "dummyConservative"], 
+        "\[ScriptCapitalE]cons"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"outputStream", "=", 
+     RowBox[{"OpenWrite", "[", "HessianFile", "]"}]}], ";"}], "\n", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"WriteString", "[", 
+     RowBox[{
+     "outputStream", ",", 
+      "\"\<!==================================================================\
+======================== \\n\>\""}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"WriteString", "[", 
+     RowBox[{
+     "outputStream", ",", 
+      "\"\<!============================ PDE.f90 Energy HESSIAN  \
+===================================== \\n\>\""}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"WriteString", "[", 
+     RowBox[{
+     "outputStream", ",", 
+      "\"\<!==================================================================\
+======================== \\n\\n\>\""}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"WriteString", "[", 
+     RowBox[{"outputStream", ",", "\"\<   EQQ = 0. \\n\\n\>\""}], "]"}], 
+    ";"}], "  ", "\n", "\n", 
+   RowBox[{"Do", "[", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"!", 
+        RowBox[{"TrueQ", "[", 
+         RowBox[{
+          RowBox[{"EQQ", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "j"}], "]"}], "]"}], "==", "0"}], "]"}]}], ",", 
+       
+       RowBox[{"WriteString", "[", 
+        RowBox[{"outputStream", ",", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{
+          "\"\<   EQQ(`1`,`2`) = `3` \\n\>\"", ",", "i", ",", "j", ",", 
+           RowBox[{
+            RowBox[{"MyFortranForm", "[", 
+             RowBox[{"EQQ", "[", 
+              RowBox[{"[", 
+               RowBox[{"i", ",", "j"}], "]"}], "]"}], "]"}], "//", 
+            "replaceParameters"}]}], "]"}]}], "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "Ncl"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "1", ",", "Ncl"}], "}"}]}], "]"}], "\n", 
+   RowBox[{
+    RowBox[{"WriteString", "[", 
+     RowBox[{"outputStream", ",", 
+      RowBox[{"StringForm", "[", "\"\<\\n#endif\\n\\n\>\"", "]"}]}], "]"}], 
+    ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Close", "[", "outputStream", "]"}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.886520368319997*^9, 
+  3.8865203953326902`*^9}},ExpressionUUID->"8a4b8587-0fb0-43ed-bf90-\
+1dc2d928524d"]
+},
+WindowSize->{1096.5, 672.},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Linux x86 (64-bit) (December 7, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ee3ba0c8-f9e9-4009-8226-bd500b608301"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 6539, 183, 734, "Input",ExpressionUUID->"8a4b8587-0fb0-43ed-bf90-1dc2d928524d"]
+}
+]
+*)
+

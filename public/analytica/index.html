@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+   · Home
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Firas Dhaouadi">
+<meta name="description" content="
+  Analytica: A Wolfram Mathematica code for analyzing nonlinear hyperbolic PDEs.
+  
+    
+    Link to heading
+  
+
+Brdiging the gap between mathematical equations on paper and numerical schemes on computers
+
+Analytica is a software written in the formal programming language of Wolfram Mathematica.
+It analyzes hyperbolic PDEs by computing eigenvalues of the corresponding quasilinear system, the corresponding eigenvectors, and verifies strong hyperbolicity by checking for missing eigenvectors in multiple eigenvalues.
+It also generates pieces of Fortran code allowing to immediately implement the considered system of PDE in three space dimensions. In particular it generates the following parts, already written as generic functions of the conserved variables">
+<meta name="keywords" content="Hyperbolic Model developer,d">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home">
+  <meta name="twitter:description" content="Analytica: A Wolfram Mathematica code for analyzing nonlinear hyperbolic PDEs. Link to heading Brdiging the gap between mathematical equations on paper and numerical schemes on computers Analytica is a software written in the formal programming language of Wolfram Mathematica. It analyzes hyperbolic PDEs by computing eigenvalues of the corresponding quasilinear system, the corresponding eigenvectors, and verifies strong hyperbolicity by checking for missing eigenvectors in multiple eigenvalues. It also generates pieces of Fortran code allowing to immediately implement the considered system of PDE in three space dimensions. In particular it generates the following parts, already written as generic functions of the conserved variables">
+
+<meta property="og:url" content="http://localhost:1313/analytica/">
+  <meta property="og:site_name" content="Home">
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Analytica: A Wolfram Mathematica code for analyzing nonlinear hyperbolic PDEs. Link to heading Brdiging the gap between mathematical equations on paper and numerical schemes on computers Analytica is a software written in the formal programming language of Wolfram Mathematica. It analyzes hyperbolic PDEs by computing eigenvalues of the corresponding quasilinear system, the corresponding eigenvectors, and verifies strong hyperbolicity by checking for missing eigenvectors in multiple eigenvalues. It also generates pieces of Fortran code allowing to immediately implement the considered system of PDE in three space dimensions. In particular it generates the following parts, already written as generic functions of the conserved variables">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/analytica/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Home
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/curriculum/"><i class="far fa-id-badge"></i> Curriculum</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/publications/"><i class="far fa-bookmark"></i> Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/prometheus/"><i class="fas fa-atom"></i> PROMETHEUS</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/analytica/"><i class="fas fa-code"></i> ANALYTICA</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/"><i class="far fa-comment-alt"></i> Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/analytica/">
+          
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="analytica-a-wolfram-mathematica-code-for-analyzing-nonlinear-hyperbolic-pdes">
+  Analytica: A Wolfram Mathematica code for analyzing nonlinear hyperbolic PDEs.
+  <a class="heading-link" href="#analytica-a-wolfram-mathematica-code-for-analyzing-nonlinear-hyperbolic-pdes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><em>Brdiging the gap between mathematical equations on paper and numerical schemes on computers</em>
+<img src="EU.svg" alt="drawing" width="500"/>
+Analytica is a software written in the formal programming language of Wolfram Mathematica.
+It analyzes hyperbolic PDEs by computing eigenvalues of the corresponding quasilinear system, the corresponding eigenvectors, and verifies strong hyperbolicity by checking for missing eigenvectors in multiple eigenvalues.
+It also generates pieces of Fortran code allowing to immediately implement the considered system of PDE in three space dimensions. In particular it generates the following parts, already written as generic functions of the conserved variables</p>
+<ul>
+<li>The flux functions in all three dimensions</li>
+<li>The non-conservative terms</li>
+<li>The source terms</li>
+<li>The eigenvalues</li>
+<li>The mappings from conservative to primitive variables and the inverse mapping</li>
+<li>Sample parameter files and their respective declarations and related functions</li>
+</ul>
+<p>It also generates the LaTeX input for the quasilinear matrix and its eigenvalues.</p>
+<h3 id="user-input--the-pde-system-written-as-on-paper">
+  User Input : The PDE system written as on paper
+  <a class="heading-link" href="#user-input--the-pde-system-written-as-on-paper">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The main objective of this code is to simplify the implementation of hyperbolic PDEs into computational codes as much as possible, without having to spend hours developing the equations and computing all the terms, in order to save time and reduce risk errors. One needs to provide the system of PDEs to solve in a separate file, saved in ./PDE_slots. Some examples are provided.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Firas Dhaouadi 
+    ·
+    
+     <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

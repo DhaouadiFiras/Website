@@ -1,0 +1,246 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9019,        238]
+NotebookOptionsPosition[      8673,        224]
+NotebookOutlinePosition[      9065,        240]
+CellTagsIndexPosition[      9022,        237]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"vv", "=", 
+   RowBox[{
+    RowBox[{"Vclean", "/.", 
+     RowBox[{
+      RowBox[{"Subscript", "[", 
+       RowBox[{"sym_", ",", "num_"}], "]"}], ":>", 
+      RowBox[{"ToExpression", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"Evaluate", "[", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<````\>\"", ",", "sym", ",", "num"}], "]"}], "]"}], 
+        "]"}], "]"}]}]}], "/.", 
+    RowBox[{
+     RowBox[{"Subscript", "[", 
+      RowBox[{"sym_", ",", "num1_", ",", "num2_"}], "]"}], ":>", 
+     RowBox[{"ToExpression", "[", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"StringForm", "[", 
+         RowBox[{"\"\<``````\>\"", ",", "sym", ",", "num1", ",", "num2"}], 
+         "]"}], "]"}], "]"}], "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"qq", "=", 
+   RowBox[{
+    RowBox[{"Qclean", "/.", 
+     RowBox[{
+      RowBox[{"Subscript", "[", 
+       RowBox[{"sym_", ",", "num_"}], "]"}], ":>", 
+      RowBox[{"ToExpression", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"Evaluate", "[", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<````\>\"", ",", "sym", ",", "num"}], "]"}], "]"}], 
+        "]"}], "]"}]}]}], "/.", 
+    RowBox[{
+     RowBox[{"Subscript", "[", 
+      RowBox[{"sym_", ",", "num1_", ",", "num2_"}], "]"}], ":>", 
+     RowBox[{"ToExpression", "[", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"StringForm", "[", 
+         RowBox[{"\"\<``````\>\"", ",", "sym", ",", "num1", ",", "num2"}], 
+         "]"}], "]"}], "]"}], "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"primslist", "=", "vv"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"conslist", "=", "qq"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dummyPrimitive", "=", 
+   RowBox[{"Array", "[", 
+    RowBox[{"v", ",", "Ncl"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dummyConservative", "=", 
+   RowBox[{"Array", "[", 
+    RowBox[{"q", ",", "Ncl"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"equality2solve", "=", 
+   RowBox[{"ToExpression", "[", 
+    RowBox[{"ToString", "[", 
+     RowBox[{"StringForm", "[", 
+      RowBox[{"\"\<functionp2c[``]\>\"", ",", 
+       RowBox[{"StringRiffle", "[", 
+        RowBox[{"dummyPrimitive", ",", "\"\<,\>\""}], "]"}]}], "]"}], "]"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"functionp2c", "=", 
+   RowBox[{"Function", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "primslist", "]"}], ",", 
+     RowBox[{"Evaluate", "[", "conslist", "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"{", "Prim2ConsRules", "}"}], "=", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"equality2solve", "==", "dummyConservative"}], ",", 
+    "dummyPrimitive", ",", 
+    RowBox[{"Assumptions", "\[Rule]", 
+     RowBox[{"{", "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", "Cons2PrimRules", "}"}], "=", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"equality2solve", "==", "dummyConservative"}], ",", 
+     "dummyConservative", ",", 
+     RowBox[{"Assumptions", "\[Rule]", 
+      RowBox[{"{", "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ExFortcons2Prim", "[", 
+    RowBox[{"filename_", ",", "EqnNumber_", ",", "ModelName_"}], "]"}], ":=", 
+   
+   RowBox[{"(", "\n", "\n", 
+    RowBox[{
+     RowBox[{"outputStream", "=", 
+      RowBox[{"OpenAppend", "[", "filename", "]"}]}], ";", "\n", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "outputStream", ",", 
+       "\"\<!=================================================================\
+========================= \\n\>\""}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "outputStream", ",", 
+       "\"\<!============================== PDE.f90 Cons2Prim  \
+======================================== \\n\>\""}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "outputStream", ",", 
+       "\"\<!=================================================================\
+========================= \\n\\n\>\""}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{"outputStream", ",", 
+       RowBox[{"StringForm", "[", 
+        RowBox[{
+        "\"\<#ifdef EQNTYPE``        !``\\n\\n\>\"", ",", "EqnNumber", ",", 
+         "ModelName"}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"WriteString", "[", 
+        RowBox[{"outputStream", ",", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<     V(`1`) = `2`  ! `3` \\n\>\"", ",", "i", ",", 
+           RowBox[{"ToUpperCase", "[", 
+            RowBox[{"MyFortranForm", "[", 
+             RowBox[{
+              RowBox[{"v", "[", "i", "]"}], "/.", "Prim2ConsRules"}], "]"}], 
+            "]"}], ",", 
+           RowBox[{"Varname", "[", 
+            RowBox[{"VV", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", "Ncl"}], "}"}]}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{"outputStream", ",", 
+       RowBox[{"StringForm", "[", "\"\<\\n#endif\\n\\n\>\"", "]"}]}], "]"}], 
+     ";", "\n", 
+     RowBox[{"Close", "[", "outputStream", "]"}], ";"}], ")"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ExFortPrim2Cons", "[", 
+    RowBox[{"filename_", ",", "EqnNumber_", ",", "ModelName_"}], "]"}], ":=", 
+   
+   RowBox[{"(", "\n", "\n", 
+    RowBox[{
+     RowBox[{"outputStream", "=", 
+      RowBox[{"OpenAppend", "[", "filename", "]"}]}], ";", "\n", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "outputStream", ",", 
+       "\"\<!=================================================================\
+========================= \\n\>\""}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "outputStream", ",", 
+       "\"\<!============================== PDE.f90 Prim2Cons  \
+======================================== \\n\>\""}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "outputStream", ",", 
+       "\"\<!=================================================================\
+========================= \\n\\n\>\""}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{"outputStream", ",", 
+       RowBox[{"StringForm", "[", 
+        RowBox[{
+        "\"\<#ifdef EQNTYPE``        !``\\n\\n\>\"", ",", "EqnNumber", ",", 
+         "ModelName"}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"WriteString", "[", 
+        RowBox[{"outputStream", ",", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<     Q(`1`) = `2`  ! `3` \\n\>\"", ",", "i", ",", 
+           RowBox[{"ToUpperCase", "[", 
+            RowBox[{"MyFortranForm", "[", 
+             RowBox[{
+              RowBox[{"q", "[", "i", "]"}], "/.", "Cons2PrimRules"}], "]"}], 
+            "]"}], ",", 
+           RowBox[{"Varname", "[", 
+            RowBox[{"VV", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", "Ncl"}], "}"}]}], "]"}], ";", "\n", 
+     RowBox[{"WriteString", "[", 
+      RowBox[{"outputStream", ",", 
+       RowBox[{"StringForm", "[", "\"\<\\n#endif\\n\\n\>\"", "]"}]}], "]"}], 
+     ";", "\n", 
+     RowBox[{"Close", "[", "outputStream", "]"}], ";"}], ")"}]}], 
+  "\[IndentingNewLine]", "\n"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8837085544327908`*^9, 3.883708584791548*^9}, {
+   3.883717869158786*^9, 3.883717870484664*^9}, {3.883735328709414*^9, 
+   3.8837353320192337`*^9}, 3.8837353632514267`*^9, {3.884066536169636*^9, 
+   3.884066559586604*^9}, {3.8840666169702*^9, 3.88406662136178*^9}, {
+   3.884066677778077*^9, 3.884066703741147*^9}, {3.90604808044841*^9, 
+   3.9060480896564198`*^9}, {3.906048182080698*^9, 
+   3.906048202327096*^9}},ExpressionUUID->"cf1f295d-c95d-4919-abfa-\
+ea91cd4f894f"]
+},
+WindowSize->{1398, 762},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"13.0 for Linux x86 (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4f88fd6f-4cc3-4365-9814-ca07f44d6291"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 8111, 202, 814, "Input",ExpressionUUID->"cf1f295d-c95d-4919-abfa-ea91cd4f894f"]
+}
+]
+*)
+

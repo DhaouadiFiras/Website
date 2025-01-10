@@ -36,7 +36,7 @@ Postdoctoral fellowship.
         title   = "PI of PROMETHEUS project"
         year    = 2022-2025
         topic   = "Hyperbolic reformulation of dispersive mechanics: theory and numerics."
-        value   = "150.000€"
+        value   = "200.000€"
         type    = "money"
 >}}
 {{<line 0.5>}}

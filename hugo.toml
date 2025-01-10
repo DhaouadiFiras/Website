@@ -1,5 +1,5 @@
 baseURL = "http://www.example.com"
-title = "Firas Dhaouadi"
+title = "Home"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
@@ -17,8 +17,7 @@ author = "Firas Dhaouadi"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = ""
 keywords = "Hyperbolic Model developer,d"
-info = ["Model developer & Programmer", "Eagerly working on the development of new hyperbolic models", 
-"and their structure-preserving discretizations"]
+info = ["Applied mathematician working in model development, numerical analysis and scientific computing, with particular interest in hyperbolic PDEs."]
 
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -153,15 +152,21 @@ pre = "far fa-bookmark"
 #pre = "far fa-edit"
 
 [[languages.en.menu.main]]
-name = "Project PROMETHEUS"
+name = "PROMETHEUS"
 weight = 3
 url = "/prometheus/"
 pre ="fas fa-atom"
 
+[[languages.en.menu.main]]
+name = "ANALYTICA"
+weight = 4
+url = "/analytica/"
+pre ="fas fa-code"
+
 
 [[languages.en.menu.main]]
 name = "Contact"
-weight = 4
+weight = 5
 url = "/contact/"
 pre = "far fa-comment-alt"
 
