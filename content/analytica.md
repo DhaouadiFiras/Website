@@ -16,5 +16,13 @@ It also generates pieces of Fortran code allowing to immediately implement the c
 - Sample parameter files and their respective declarations and related functions
 
 It also generates the LaTeX input for the quasilinear matrix and its eigenvalues.
-### User Input : The PDE system written as on paper
-The main objective of this code is to simplify the implementation of hyperbolic PDEs into computational codes as much as possible, without having to spend hours developing the equations and computing all the terms, in order to save time and reduce risk errors. One needs to provide the system of PDEs to solve in a separate file, saved in ./PDE_slots. Some examples are provided.   
+<!-- ### User Input : The PDE system written as on paper
+The main objective of this code is to simplify the implementation of hyperbolic PDEs into computational codes as much as possible, without having to spend hours developing the equations and computing all the terms, in order to save time and reduce risk errors.  -->
+
+
+### Download
+A zip file with all the code files can be downloaded from [{{< fas "file-zipper" >}} here](Analytica.zip) 
+<!-- 
+```Mathematica
+f[x_]:=Sin[x]
+``` -->
