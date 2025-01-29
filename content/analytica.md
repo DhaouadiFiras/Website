@@ -4,7 +4,6 @@ slug = "analytica"
 ## Analytica: A Wolfram Mathematica code for analyzing nonlinear hyperbolic PDEs. 
 
 *Brdiging the gap between mathematical equations on paper and numerical schemes on computers*
-{{< img EU.svg 500 >}} 
 Analytica is a software written in the formal programming language of Wolfram Mathematica.
 It analyzes hyperbolic PDEs by computing eigenvalues of the corresponding quasilinear system, the corresponding eigenvectors, and verifies strong hyperbolicity by checking for missing eigenvectors in multiple eigenvalues.
 It also generates pieces of Fortran code allowing to immediately implement the considered system of PDE in three space dimensions. In particular it generates the following parts, already written as generic functions of the conserved variables
