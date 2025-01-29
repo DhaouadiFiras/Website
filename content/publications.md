@@ -32,7 +32,7 @@ slug = "publications"
 
     code = "https://royalsocietypublishing.org/doi/suppl/10.1098/rspa.2023.0440"
 
-    file = "Dhaouadi Gavrilyuk 2024 - Hyperbolic Heat.pdf"
+    file = "DhaouadiGavrilyuk2024-HyperbolicHeat.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2023"
@@ -40,7 +40,7 @@ slug = "publications"
     authors  = "Dhaouadi, F. and Dumbser, M., 2023"
     reference = "Mathematics, 11(4), p.876."
     journal = "https://www.mdpi.com/2227-7390/11/4/876"
-    file = "Dhaouadi Dumbser 2023 - CurlFreeNSK.pdf"
+    file = "DhaouadiDumbser2023-CurlFreeNSK.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2022"
@@ -48,7 +48,7 @@ slug = "publications"
     authors  = "Dhaouadi, F. and Dumbser, M., 2023"
     reference = "Journal of Computational Physics, 470, p.111544."
     journal = "https://doi.org/10.1016/j.jcp.2022.111544"
-    file = "Dhaouadi Dumbser 2022 - Hyperbolic NSK.pdf"
+    file = "DhaouadiDumbser2022-HyperbolicNSK.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2022"
@@ -56,7 +56,7 @@ slug = "publications"
     authors  = "Dhaouadi, F., Gavrilyuk, S. and Vila, J.P."
     reference = "Applied Mathematics and Computation, 433, p.127378."
     journal = "https://doi.org/10.1016/j.amc.2022.127378"
-    file = "Dhaouadi Gavrilyuk Vila 2022 - Hyperbolic Thin Films.pdf"
+    file = "DhaouadiGavrilyukVila2022-HyperbolicThinFilms.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2021"
@@ -65,7 +65,7 @@ slug = "publications"
     reference = "ESAIM: Proceedings and Surveys 70, 124-136"
     preprint = "https://arxiv.org/abs/2004.12879"  
     journal = "https://www.esaim-proc.org/articles/proc/pdf/2021/01/proc2107008.pdf"
-    file = "Dhaouadi et-al 2020 - Stability of Modified equations.pdf"
+    file = "Dhaouadietal2020-StabilityofModifiedequations.pdf"
  >}}
 1. {{< paperlinks 
     year     = "2018"
@@ -74,7 +74,7 @@ slug = "publications"
     reference = "Stud Appl Math. 2018;1–23."
     preprint = "https://hal.archives-ouvertes.fr/hal-01779915"
     journal = "https://onlinelibrary.wiley.com/doi/abs/10.1111/sapm.12238"
-    file = "Dhaouadi Favrie Gavrilyuk 2018 - Hyperbolic DNLS.pdf"
+    file = "DhaouadiFavrieGavrilyuk2018-HyperbolicDNLS.pdf"
  >}} 
 
 ### Dissemination activities
